@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="{{asset('js/captura.js')}}"></script>
+    </head>
+    <body>
+        <!-- Stream video via webcam -->
+        <div class="video-wrap">
+            <video id="video" playsinline autoplay></video>
+
+            <video id="videoconretraso" playsinline autoplay></video>
+        </div>
+
+        <!-- Trigger canvas web API -->
+        <div class="controller">
+            <button id="snap">Capture</button>
+        </div>
+
+        <!-- Webcam video snapshot -->
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </body>
+</html>

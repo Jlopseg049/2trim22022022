@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}StromZu{% endblock %}
+
+{% block font %}
+   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+{% endblock %}
+{# Estilos #}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('styles/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/elegant-icons.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/owl.carousel.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/magnific-popup.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('styles/style.css')}}" type="text/css">
+{% endblock %}
+
+
+{# HTML #}
+{% block head %}
+    {{include('index/indexHeader.html.twig')}}
+{% endblock %}
+
+{% block body %}
+    {{include('index/indexBody.html.twig')}}
+{% endblock %}
+
+{% block footer %}
+    {{include('index/indexFooter.html.twig')}}
+{% endblock %}
+
+{# JS #}
+
+{% block javascripts %}
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+{% endblock %}

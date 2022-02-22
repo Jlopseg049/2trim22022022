@@ -1,0 +1,66 @@
+
+            {% extends 'base.html.twig' %}
+
+{% block title %}
+ StromZu
+{% endblock %}
+{% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{% endblock %}
+{% block javascripts %}
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+{% endblock %}
+{% block stylesheets %}
+
+<!-- Custom Theme files -->
+<link href="{{asset('styles/register.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+{% endblock %}
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+    <div class="container">
+    
+	<!-- main -->
+	<div class="main-w3layouts wrapper ">
+		<h1>Edición de usuario</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+                    {{ form_start(addCanalForm,{'attr':{'class':'form-control'}}) }}
+                            {{ form_widget(addCanalForm.username,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(addCanalForm.foto,{'attr':{'class':'form-control img'}}) }}
+                            {{ form_widget(addCanalForm.name,{'attr':{'class':'form-control text'}})}}
+                            {{ form_widget(addCanalForm.ap1,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(addCanalForm.ap2,{'attr':{'class':'form-control text'}}) }}
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGNUP">
+                    {{ form_end(addCanalForm) }}
+			</div>
+		</div>
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>
+{% endblock %}
+
+
+

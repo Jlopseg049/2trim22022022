@@ -1,0 +1,19 @@
+{% for canal in canales %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+          {% if canal.foto == "" %}
+                <img src="{{asset('img/profiler/noprofile.jpg')}}" class="img h-100 w-100 " alt="noprofile">
+              {% else %}
+                <img src="{{asset('img/profiler/' ~ canal.foto)}}" class="img h-100 w-100" alt={{canal.foto}}>
+
+          {% endif %}
+              <div class="portfolio-info">
+                <h4>{{canal.nombre}}</h4>
+                <p>{{canal.username}}</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="fa fa-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    {% endfor %}
