@@ -39,7 +39,7 @@ $(()=>{
     var busqueda = $('<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"></div>')
 
 
-    $(document.body).on('keyup', 'input[id=buscador]',function() {
+    $(document.body).on('keyup', $('input[id=buscador]'),function() {
   
             $.getJSON("https://www.stromzu.com:8000/canal/find/" + ($('#buscador').val().length != 0 ? 
                                                                     $('#buscador').val() : "all"),

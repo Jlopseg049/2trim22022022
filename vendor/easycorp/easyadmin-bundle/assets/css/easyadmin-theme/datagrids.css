@@ -5,6 +5,7 @@ table.datagrid {
   margin-bottom: 0;
   width: 100%;
 }
+
 @media (max-width: 992px) {
   table.datagrid:not(.datagrid-empty) tbody, table.datagrid:not(.datagrid-empty) tr, table.datagrid:not(.datagrid-empty) td {
     display: block;
@@ -20,12 +21,14 @@ table.datagrid {
     margin-bottom: 30px;
   }
   table.datagrid:not(.datagrid-empty) tr:not(.empty-row) td {
-    box-shadow: inset 0 1px 0 var(--table-cell-border-color);
+    -webkit-box-shadow: inset 0 1px 0 var(--table-cell-border-color);
+            box-shadow: inset 0 1px 0 var(--table-cell-border-color);
     padding-left: 35%;
     position: relative;
   }
   table.datagrid:not(.datagrid-empty) tr:not(.empty-row) td:first-child {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   table.datagrid:not(.datagrid-empty) tr:not(.empty-row) td.batch-actions-selector {
     padding: 8px;
@@ -71,7 +74,8 @@ table.datagrid {
 
 .datagrid thead th {
   border: 0;
-  box-shadow: inset 0 -2px 0 var(--table-cell-border-color);
+  -webkit-box-shadow: inset 0 -2px 0 var(--table-cell-border-color);
+          box-shadow: inset 0 -2px 0 var(--table-cell-border-color);
   padding: 0;
 }
 
@@ -85,18 +89,21 @@ table.datagrid {
 }
 
 .datagrid td {
-  box-shadow: inset 0 1px 0 var(--table-cell-border-color);
+  -webkit-box-shadow: inset 0 1px 0 var(--table-cell-border-color);
+          box-shadow: inset 0 1px 0 var(--table-cell-border-color);
   padding: 8px;
   line-height: 20px;
 }
 
 .datagrid tbody {
-  box-shadow: 0 1px 0 var(--table-cell-border-color);
+  -webkit-box-shadow: 0 1px 0 var(--table-cell-border-color);
+          box-shadow: 0 1px 0 var(--table-cell-border-color);
 }
 
 @media (min-width: 992px) {
   .datagrid thead + tbody tr:first-child td {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -114,7 +121,8 @@ table.datagrid {
 }
 
 .datagrid thead .sorted {
-  box-shadow: inset 0 -2px 0 var(--color-primary);
+  -webkit-box-shadow: inset 0 -2px 0 var(--color-primary);
+          box-shadow: inset 0 -2px 0 var(--color-primary);
 }
 
 .datagrid thead .sorted a, .datagrid thead .sorted span {
@@ -154,7 +162,8 @@ table.datagrid {
 }
 
 .datagrid td.actions .action-icon {
-  filter: opacity(0.6);
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
   font-size: var(--font-size-base);
   margin-right: 2px;
 }
@@ -164,35 +173,44 @@ table.datagrid {
     padding: 2px 8px;
   }
 }
+
 .datagrid tr:not(.selected-row):hover .dropdown-toggle {
   background: var(--white);
   border-color: var(--dropdown-toggle-border-color);
 }
+
 .datagrid tr:hover .dropdown-toggle:hover {
   border-color: var(--dropdown-toggle-hover-border-color);
 }
+
 .datagrid tr:hover .dropdown-toggle:focus, .datagrid tr:hover .dropdown-toggle:active, .datagrid tr:hover .dropdown-toggle:active:focus,
 .datagrid .dropdown-toggle:focus, .datagrid .dropdown-toggle:active, .datagrid .dropdown-toggle:active:focus,
 .datagrid tr:hover .dropdown-toggle.show, .datagrid tr .dropdown-toggle.show, .datagrid .dropdown-toggle.show {
   border-color: var(--dropdown-toggle-hover-border-color);
-  box-shadow: var(--button-active-shadow);
+  -webkit-box-shadow: var(--button-active-shadow);
+          box-shadow: var(--button-active-shadow);
   outline: none;
 }
+
 .datagrid .dropdown-actions .dropdown-toggle {
   border: 1px solid transparent;
   border-radius: var(--border-radius);
   color: var(--dropdown-toggle-color);
   padding: 3px 5px;
 }
+
 .datagrid .dropdown-actions .dropdown-toggle:after {
   display: none;
 }
+
 .datagrid .dropdown-actions .dropdown-toggle:hover {
   cursor: pointer;
 }
+
 .datagrid .dropdown-actions .dropdown-toggle svg {
   vertical-align: top;
 }
+
 .datagrid .dropdown-actions .dropdown-menu {
   z-index: var(--zindex-900);
 }
@@ -213,7 +231,8 @@ table.datagrid {
 .datagrid mark {
   border-radius: var(--border-radius);
   background: var(--highlight-bg);
-  box-shadow: 0 1px 0 rgba(250, 204, 21, 0.4);
+  -webkit-box-shadow: 0 1px 0 rgba(250, 204, 21, 0.4);
+          box-shadow: 0 1px 0 rgba(250, 204, 21, 0.4);
   color: inherit;
   padding: 0 1px;
 }
@@ -225,15 +244,22 @@ table.datagrid {
 .datagrid .field-boolean {
   text-align: center;
 }
+
 .datagrid .field-boolean.has-switch {
   padding: 6px 8px;
 }
+
 .datagrid .field-boolean .form-switch {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .datagrid .field-boolean .form-switch input {
   margin-top: 0;
   position: relative;
@@ -274,6 +300,7 @@ table.datagrid {
 .datagrid .empty-row td:nth-child(2) {
   display: none;
 }
+
 @media (min-width: 992px) {
   .datagrid .empty-row td:nth-child(2) {
     width: 5%;
@@ -321,24 +348,30 @@ table.datagrid {
 }
 
 .datagrid-header-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0px 0px 10px;
 }
 
 .datagrid-header-tools .datagrid-search {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 480px;
   margin-right: 15px;
 }
 
 .datagrid-header-tools .datagrid-search .form-group,
 .datagrid-header-tools .datagrid-search .form-group .form-widget {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0;
   padding: 0;
 }
 
-.datagrid-header-tools .datagrid-search input[type=search].form-control {
+.datagrid-header-tools .datagrid-search input[type="search"].form-control {
   background-color: var(--white);
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path fill="%23aaa" d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/></svg>');
   background-repeat: no-repeat;
@@ -406,7 +439,11 @@ table.datagrid {
 }
 
 .filter-heading {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 4px 0;
 }
@@ -414,7 +451,9 @@ table.datagrid {
 .filter-heading a {
   color: var(--link-color);
   cursor: pointer;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-left: 7px;
 }
 
@@ -437,7 +476,11 @@ table.datagrid {
 }
 
 .filter-content .form-check-inline {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -459,4 +502,5 @@ table.datagrid {
 
 .table.datagrid > :not(:first-child) {
   border-top-style: none;
-}/*# sourceMappingURL=datagrids.css.map */
+}
+/*# sourceMappingURL=datagrids.css.map */

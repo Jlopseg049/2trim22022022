@@ -35,6 +35,7 @@ class CanalController extends AbstractController
                     "responseBody" => $this->render('canales/canales.html.twig', [
                     'canales' => $canales,
                     ])->getContent());
+                    return new Response(json_encode($response));
         }
     // Una vez ya hayamos creado nuestra estructura, unicamente necesitaremos
 

@@ -1,17 +1,25 @@
 body.page-login {
   background: var(--page-login-bg);
 }
+
 @media (min-width: 992px) {
   body.page-login {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     overflow: hidden;
     position: absolute;
     width: 100vw;
   }
 }
+
 body.page-login #flash-messages {
   position: absolute;
   left: 0;
@@ -20,13 +28,21 @@ body.page-login #flash-messages {
 }
 
 .login-wrapper {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   max-width: 28rem;
   width: 94%;
 }
+
 @media (min-width: 992px) {
   .login-wrapper {
     margin-top: -225px;
@@ -43,6 +59,7 @@ body.page-login #flash-messages {
   font-size: var(--font-size-lg);
   text-align: center;
 }
+
 @media (min-width: 992px) {
   .login-wrapper .main-header #header-logo a {
     font-size: var(--font-size-xl);
@@ -52,10 +69,12 @@ body.page-login #flash-messages {
 .login-wrapper .content {
   background-color: var(--white);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-lg);
+  -webkit-box-shadow: var(--box-shadow-lg);
+          box-shadow: var(--box-shadow-lg);
   padding: 15px 30px;
   width: 100%;
 }
+
 @media (min-width: 992px) {
   .login-wrapper .content {
     padding: 2rem 2.5rem;
@@ -71,4 +90,5 @@ body.page-login #flash-messages {
 .login-wrapper .form-text {
   font-size: inherit;
   margin-top: 5px;
-}/*# sourceMappingURL=pages.css.map */
+}
+/*# sourceMappingURL=pages.css.map */

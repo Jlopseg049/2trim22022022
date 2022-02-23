@@ -154,34 +154,34 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
 \t\t\t<div class=\"agileits-top\">
                     ";
         // line 35
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 35, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 35, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
         echo "
                             ";
         // line 36
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 36, $this->source); })()), "username", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 36, $this->source); })()), "username", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 37
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 37, $this->source); })()), "foto", [], "any", false, false, false, 37), 'widget', ["attr" => ["class" => "form-control img"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 37, $this->source); })()), "foto", [], "any", false, false, false, 37), 'widget', ["attr" => ["class" => "form-control img"]]);
         echo "
                             ";
         // line 38
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 38, $this->source); })()), "name", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 38, $this->source); })()), "name", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 39
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 39, $this->source); })()), "ap1", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 39, $this->source); })()), "ap1", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 40
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 40, $this->source); })()), "ap2", [], "any", false, false, false, 40), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 40, $this->source); })()), "ap2", [], "any", false, false, false, 40), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
 \t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
                     ";
         // line 44
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["addCanalForm"]) || array_key_exists("addCanalForm", $context) ? $context["addCanalForm"] : (function () { throw new RuntimeError('Variable "addCanalForm" does not exist.', 44, $this->source); })()), 'form_end');
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 44, $this->source); })()), 'form_end');
         echo "
 \t\t\t</div>
 \t\t</div>
@@ -258,16 +258,16 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
 \t\t<h1>Edición de usuario</h1>
 \t\t<div class=\"main-agileinfo\">
 \t\t\t<div class=\"agileits-top\">
-                    {{ form_start(addCanalForm,{'attr':{'class':'form-control'}}) }}
-                            {{ form_widget(addCanalForm.username,{'attr':{'class':'form-control text'}}) }}
-                            {{ form_widget(addCanalForm.foto,{'attr':{'class':'form-control img'}}) }}
-                            {{ form_widget(addCanalForm.name,{'attr':{'class':'form-control text'}})}}
-                            {{ form_widget(addCanalForm.ap1,{'attr':{'class':'form-control text'}}) }}
-                            {{ form_widget(addCanalForm.ap2,{'attr':{'class':'form-control text'}}) }}
+                    {{ form_start(editUserForm,{'attr':{'class':'form-control'}}) }}
+                            {{ form_widget(editUserForm.username,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(editUserForm.foto,{'attr':{'class':'form-control img'}}) }}
+                            {{ form_widget(editUserForm.name,{'attr':{'class':'form-control text'}})}}
+                            {{ form_widget(editUserForm.ap1,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(editUserForm.ap2,{'attr':{'class':'form-control text'}}) }}
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
 \t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
-                    {{ form_end(addCanalForm) }}
+                    {{ form_end(editUserForm) }}
 \t\t\t</div>
 \t\t</div>
 \t\t<ul class=\"colorlib-bubbles\">
@@ -290,6 +290,6 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
 
 
 
-", "usuarios/edit.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\usuarios\\edit.html.twig");
+", "usuarios/edit.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\usuarios\\edit.html.twig");
     }
 }

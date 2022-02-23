@@ -198,6 +198,6 @@ class __TwigTemplate_0ef0f63a9a265397960c36f9adb3b88f extends Template
     {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\base.html.twig");
     }
 }

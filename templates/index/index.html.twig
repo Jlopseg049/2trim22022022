@@ -25,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('styles/style.css')}}" rel="stylesheet">
+  <link href="{{asset('styles/spinner.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
 
@@ -58,11 +59,11 @@
             </div>
           </li>
 
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Quienes somos</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Ofertas</a></li>
 
           {% if is_granted('ROLE_USER') %}
           <li class="dropdown">
@@ -79,7 +80,7 @@
             <ul>
             
               <li><a href="#">Mi canal</a></li>
-              <li><a href="#">Editar cuenta</a></li>
+              <li><a href={{"/user/edit/" ~ app.user.id}} >Editar cuenta</a></li>
               <li><a class="nav-link" href="logout">Cerrar Sesión</a></li>
             </ul>
           </li> 
@@ -378,12 +379,11 @@
           <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
         </div>
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>Reserva</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -397,11 +397,10 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mt-md-0">
             <div class="box recommended" data-aos="zoom-in">
               <span class="recommended-badge">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
+              <h3>Rutina</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -414,24 +413,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -591,14 +572,13 @@
                     </div>
                     <div class="col-sm-3 my-sm-0 mt-5">
                         <ul class="list-unstyled">
-                            <li class="mt-0">Customers</li>
-                            <li>Use Cases</li>
-                            <li>Customers Services</li>
+                            <li class="mt-0">Clientes</li>
+                            <li>Servicios de clientes</li>
                         </ul>
                     </div>
                     <div class="col-sm-3 my-sm-0 mt-5">
                         <ul class="list-unstyled">
-                            <li class="mt-0">Company</li>
+                            <li class="mt-0">Compañia</li>
                             <li><a href="mapaNav">Mapa de navegación</a></li>
                             <li>Careers- <span class="Careers">We're-hiring</span></li>
                         </ul>

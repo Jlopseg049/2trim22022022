@@ -6,6 +6,7 @@
   width: 32px;
   -webkit-appearance: none;
 }
+
 .form-switch .form-check-input:checked {
   border-color: var(--indigo-500);
 }
@@ -15,5 +16,7 @@
 }
 
 .form-switch .form-check-input:focus {
-  box-shadow: none;
-}/*# sourceMappingURL=switches.css.map */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=switches.css.map */

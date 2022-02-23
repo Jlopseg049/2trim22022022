@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  transition: all, 0.4;
+  transition: all, 0.4s;
 }
 
 .back-to-top i {
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   color: #151515;
   text-transform: uppercase;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .navbar a i, .navbar a:focus i {
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   background: #000000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .navbar .dropdown ul li {
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
-  transition: all, 0.3;
+  transition: all, 0.3s;
   z-index: 999;
 }
 
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
   background-color: #000000;
   overflow-y: auto;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .navbar-mobile a {
@@ -517,13 +517,13 @@ section {
   border: 0;
   padding: 20px;
   color: #151515;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .featured .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .featured .nav-link:hover h4 {
@@ -818,7 +818,7 @@ section {
 
 .portfolio .portfolio-wrap {
   height: 30vh;
-  transition: all, 0.3;
+  transition: all, 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -833,7 +833,7 @@ section {
   right: 30px;
   top: 30px;
   bottom: 30px;
-  transition: all, ease-in-out 0.3;
+  transition: all, ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
 }
@@ -847,7 +847,7 @@ section {
   bottom: 0;
   text-align: center;
   z-index: 3;
-  transition: all, ease-in-out 0.3;
+  transition: all, ease-in-out 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -906,7 +906,7 @@ section {
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -1282,7 +1282,7 @@ section {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 .pricing .box .btn-buy:hover {
@@ -1646,7 +1646,7 @@ section {
   padding: 0 20px;
   background: #7cc576;
   color: #000000;
-  transition: all, 0.3;
+  transition: all, 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1671,7 +1671,7 @@ section {
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: all, 0.3;
+  transition: all, 0.3s;
 }
 
 #footer .footer-top .social-links a:hover {
@@ -1701,7 +1701,7 @@ section {
 .btn-outline-success {
   color: #7cc576 !important;
   border: #7cc576 2px solid !important;
-  transition: all, 0.4;
+  transition: all, 0.4s;
 }
 
 body {

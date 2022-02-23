@@ -1,0 +1,113 @@
+<body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <a href="index.html"><img src="{{asset('img/logo.png')}}" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <div class="input-group ml-2">
+              <div class="input-group-append">
+                <button id="botoncito" class="btn btn-outline-success h-100" type="submit">Ver Canales</button>
+              </div>
+            </div>
+          </li>
+
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Quienes somos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+
+          {% if is_granted('ROLE_USER') %}
+          <li class="dropdown">
+            <a {#href="editaUsuario"#} >
+              {% if app.user.foto == "" %}
+                <img id="profileImg" src="{{asset('img/profiler/noprofile.jpg')}}" 
+                  class="img " alt={{app.user.foto}}>
+              {% else %}
+                <img id="profileImg" src="{{asset('img/profiler/' ~ app.user.foto)}}" 
+                  class="img " alt={{app.user.foto}}>
+              {% endif %}
+
+            </a>
+            <ul>
+            
+              <li><a href="#">Mi canal</a></li>
+              <li><a href={{"/user/edit/" ~ app.user.id}} >Editar cuenta</a></li>
+              <li><a class="nav-link" href="logout">Cerrar Sesión</a></li>
+            </ul>
+          </li> 
+              {% else %}
+              <li><a class="nav-link" href="login">Iniciar Sesión</a></li>
+              <li><a class="nav-link" href="register">Registrarse</a></li>
+
+          {% endif %}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+<div class="altoMain">
+    <main>
+        
+    </main>
+</div>
+<!-- ======= Footer ======= -->
+  <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
+    <div class="col-12">
+        <div class="row row-2">
+            <div class="col-sm-3 text-md-center">
+                <h5><span> <i class="fa fa-firefox text-light" aria-hidden="true"></i></span><b> Stride</b></h5>
+            </div>
+            <div class="col-sm-3 my-sm-0 mt-5">
+                <ul class="list-unstyled">
+                    <li class="mt-0">Platform</li>
+                    <li>Help Center</li>
+                    <li>Security</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 my-sm-0 mt-5">
+                <ul class="list-unstyled">
+                    <li class="mt-0">Customers</li>
+                    <li>Use Cases</li>
+                    <li>Customers Services</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 my-sm-0 mt-5">
+                <ul class="list-unstyled">
+                    <li class="mt-0">Company</li>
+                    <li><a href="mapaNav">Mapa de navegación</a></li>
+                    <li>Careers- <span class="Careers">We're-hiring</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-0 pt-0 row-1 mb-0 px-sm-3 px-2">
+    <div class="col-12">
+        <div class="row my-4 row-1 no-gutters">
+            <div class="col-sm-3 col-auto text-center"><small>&#9400; Stride Softwere</small></div>
+            <div class="col-md-3 col-auto "></div>
+            <div class="col-md-3 col-auto"></div>
+            <div class="col my-auto text-md-left text-right "> <small> hello@getstride.com <span><img src="https://i.imgur.com/TtB6MDc.png" class="img-fluid " width="25"></span> <span><img src="https://i.imgur.com/N90KDYM.png" class="img-fluid " width="25"></span></small> </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{{asset('vendor/aos/aos.js')}}"></script>
+<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('vendor/glightbox/js/glightbox.min.js')}}"></script>
+<script src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+<script src="{{asset('vendor/swiper/swiper-bundle.min.js')}}"></script>
+</body>

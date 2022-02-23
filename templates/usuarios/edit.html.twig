@@ -32,16 +32,16 @@
 		<h1>Edición de usuario</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-                    {{ form_start(addCanalForm,{'attr':{'class':'form-control'}}) }}
-                            {{ form_widget(addCanalForm.username,{'attr':{'class':'form-control text'}}) }}
-                            {{ form_widget(addCanalForm.foto,{'attr':{'class':'form-control img'}}) }}
-                            {{ form_widget(addCanalForm.name,{'attr':{'class':'form-control text'}})}}
-                            {{ form_widget(addCanalForm.ap1,{'attr':{'class':'form-control text'}}) }}
-                            {{ form_widget(addCanalForm.ap2,{'attr':{'class':'form-control text'}}) }}
+                    {{ form_start(editUserForm,{'attr':{'class':'form-control'}}) }}
+                            {{ form_widget(editUserForm.username,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(editUserForm.foto,{'attr':{'class':'form-control img'}}) }}
+                            {{ form_widget(editUserForm.name,{'attr':{'class':'form-control text'}})}}
+                            {{ form_widget(editUserForm.ap1,{'attr':{'class':'form-control text'}}) }}
+                            {{ form_widget(editUserForm.ap2,{'attr':{'class':'form-control text'}}) }}
 						<div class="clear"> </div>
 					</div>
 					<input type="submit" value="SIGNUP">
-                    {{ form_end(addCanalForm) }}
+                    {{ form_end(editUserForm) }}
 			</div>
 		</div>
 		<ul class="colorlib-bubbles">

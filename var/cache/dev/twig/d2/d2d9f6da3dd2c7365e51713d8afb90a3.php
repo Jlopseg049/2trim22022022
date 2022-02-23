@@ -91,6 +91,10 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
         // line 27
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/style.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 28
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/spinner.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
 
   <!-- Template Main CSS File -->
 
@@ -101,7 +105,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
   <section id=\"hero\">
     <div class=\"hero-container\">
       <!-- <a href=\"index.html\" class=\"hero-logo\" data-aos=\"zoom-in\"><img src=\"";
-        // line 37
+        // line 38
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/hero-logo.png"), "html", null, true);
         echo "\" alt=\"\"></a> -->
       <h1 data-aos=\"zoom-in\">Welcome To StromZu</h1>
@@ -115,7 +119,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
       <div class=\"logo\">
         <!-- <a href=\"index.html\"><img src=\"";
-        // line 48
+        // line 49
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/logo.png"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid\"></a> -->
       </div>
@@ -130,62 +134,65 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             </div>
           </li>
 
-          <li><a class=\"nav-link scrollto active\" href=\"#hero\">Home</a></li>
+          <li><a class=\"nav-link scrollto active\" href=\"#hero\">Inicio</a></li>
           <li><a class=\"nav-link scrollto\" href=\"#about\">Quienes somos</a></li>
           <li><a class=\"nav-link scrollto\" href=\"#services\">Servicios</a></li>
-          <li><a class=\"nav-link scrollto\" href=\"#team\">Team</a></li>
-          <li><a class=\"nav-link scrollto\" href=\"#pricing\">Pricing</a></li>
+          <li><a class=\"nav-link scrollto\" href=\"#team\">Equipo</a></li>
+          <li><a class=\"nav-link scrollto\" href=\"#pricing\">Ofertas</a></li>
 
           ";
-        // line 67
+        // line 68
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 68
+            // line 69
             echo "          <li class=\"dropdown\">
             <a ";
-            // line 69
+            // line 70
             echo " >
               ";
-            // line 70
-            if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 70, $this->source); })()), "user", [], "any", false, false, false, 70), "foto", [], "any", false, false, false, 70) == "")) {
-                // line 71
+            // line 71
+            if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 71, $this->source); })()), "user", [], "any", false, false, false, 71), "foto", [], "any", false, false, false, 71) == "")) {
+                // line 72
                 echo "                <img id=\"profileImg\" src=\"";
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/profiler/noprofile.jpg"), "html", null, true);
                 echo "\" 
                   class=\"img \" alt=";
-                // line 72
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 72, $this->source); })()), "user", [], "any", false, false, false, 72), "foto", [], "any", false, false, false, 72), "html", null, true);
+                // line 73
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 73, $this->source); })()), "user", [], "any", false, false, false, 73), "foto", [], "any", false, false, false, 73), "html", null, true);
                 echo ">
               ";
             } else {
-                // line 74
+                // line 75
                 echo "                <img id=\"profileImg\" src=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img/profiler/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 74, $this->source); })()), "user", [], "any", false, false, false, 74), "foto", [], "any", false, false, false, 74))), "html", null, true);
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("img/profiler/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 75, $this->source); })()), "user", [], "any", false, false, false, 75), "foto", [], "any", false, false, false, 75))), "html", null, true);
                 echo "\" 
                   class=\"img \" alt=";
-                // line 75
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 75, $this->source); })()), "user", [], "any", false, false, false, 75), "foto", [], "any", false, false, false, 75), "html", null, true);
+                // line 76
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 76, $this->source); })()), "user", [], "any", false, false, false, 76), "foto", [], "any", false, false, false, 76), "html", null, true);
                 echo ">
               ";
             }
-            // line 77
+            // line 78
             echo "
             </a>
             <ul>
             
               <li><a href=\"#\">Mi canal</a></li>
-              <li><a href=\"#\">Editar cuenta</a></li>
+              <li><a href=";
+            // line 83
+            echo twig_escape_filter($this->env, ("/user/edit/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 83, $this->source); })()), "user", [], "any", false, false, false, 83), "id", [], "any", false, false, false, 83)), "html", null, true);
+            echo " >Editar cuenta</a></li>
               <li><a class=\"nav-link\" href=\"logout\">Cerrar Sesión</a></li>
             </ul>
           </li> 
               ";
         } else {
-            // line 87
+            // line 88
             echo "              <li><a class=\"nav-link\" href=\"login\">Iniciar Sesión</a></li>
               <li><a class=\"nav-link\" href=\"register\">Registrarse</a></li>
 
           ";
         }
-        // line 91
+        // line 92
         echo "        </ul>
         <i class=\"bi bi-list mobile-nav-toggle\"></i>
       </nav><!-- .navbar -->
@@ -208,7 +215,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
           <div class=\"col-lg-6\" data-aos=\"fade-right\">
             <div class=\"image\">
               <img src=\"";
-        // line 112
+        // line 113
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/about.jpg"), "html", null, true);
         echo "\" class=\"img-fluid\" alt=\"\">
             </div>
@@ -270,7 +277,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             </div>
           </div>
           <div class=\"image col-lg-6 order-1 order-lg-2\" style='background-image: url(\"";
-        // line 171
+        // line 172
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/services.jpg"), "html", null, true);
         echo "\");' data-aos=\"fade-left\" data-aos-delay=\"100\"></div>
         </div>
@@ -288,7 +295,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               <div class=\"tab-pane active show\" id=\"tab-1\">
                 <figure>
                   <img src=\"";
-        // line 186
+        // line 187
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/featured-1.png"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid\">
                 </figure>
@@ -296,7 +303,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               <div class=\"tab-pane\" id=\"tab-2\">
                 <figure>
                   <img src=\"";
-        // line 191
+        // line 192
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/featured-2.png"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid\">
                 </figure>
@@ -304,7 +311,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               <div class=\"tab-pane\" id=\"tab-3\">
                 <figure>
                   <img src=\"";
-        // line 196
+        // line 197
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/featured-3.png"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid\">
                 </figure>
@@ -312,7 +319,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               <div class=\"tab-pane\" id=\"tab-4\">
                 <figure>
                   <img src=\"";
-        // line 201
+        // line 202
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/featured-4.png"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid\">
                 </figure>
@@ -402,7 +409,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
           </div>
 
           <div class=\"col-lg-5 order-1 order-lg-2 align-items-stretch video-box\" style='background-image: url(\"";
-        // line 288
+        // line 289
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/why-us.jpg"), "html", null, true);
         echo "\");' data-aos=\"zoom-in\">
             <a href=\"https://www.youtube.com/watch?v=LIqQNG_q2us\" class=\"venobox play-btn mb-4\" data-vbtype=\"video\" data-autoplay=\"true\"></a>
@@ -429,7 +436,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                 </p>
                 <img src=\"";
-        // line 312
+        // line 313
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-1.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Saul Goodman</h3>
@@ -443,7 +450,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                 </p>
                 <img src=\"";
-        // line 323
+        // line 324
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-2.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Sara Wilsson</h3>
@@ -457,7 +464,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                 </p>
                 <img src=\"";
-        // line 334
+        // line 335
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-3.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Jena Karlis</h3>
@@ -471,7 +478,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                 </p>
                 <img src=\"";
-        // line 345
+        // line 346
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-4.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Matt Brandon</h3>
@@ -485,7 +492,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                 </p>
                 <img src=\"";
-        // line 356
+        // line 357
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-5.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>John Larson</h3>
@@ -512,12 +519,11 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
           <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
         </div>
 
-        <div class=\"row\">
+        <div class=\"row d-flex justify-content-center\">
 
-          <div class=\"col-lg-4 col-md-6\">
+          <div class=\"col-lg-4 col-md-6 col-sm-12\">
             <div class=\"box\" data-aos=\"zoom-in\" data-aos-delay=\"100\">
-              <h3>Free</h3>
-              <h4><sup>\$</sup>0<span> / month</span></h4>
+              <h3>Reserva</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -531,11 +537,10 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             </div>
           </div>
 
-          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\">
+          <div class=\"col-lg-4 col-md-6 col-sm-12 mt-4 mt-md-0\">
             <div class=\"box recommended\" data-aos=\"zoom-in\">
               <span class=\"recommended-badge\">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>\$</sup>19<span> / month</span></h4>
+              <h3>Rutina</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -548,24 +553,6 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               </div>
             </div>
           </div>
-
-          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\">
-            <div class=\"box\" data-aos=\"zoom-in\" data-aos-delay=\"100\">
-              <h3>Developer</h3>
-              <h4><sup>\$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class=\"btn-wrap\">
-                <a href=\"#\" class=\"btn-buy\">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -725,14 +712,13 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                     </div>
                     <div class=\"col-sm-3 my-sm-0 mt-5\">
                         <ul class=\"list-unstyled\">
-                            <li class=\"mt-0\">Customers</li>
-                            <li>Use Cases</li>
-                            <li>Customers Services</li>
+                            <li class=\"mt-0\">Clientes</li>
+                            <li>Servicios de clientes</li>
                         </ul>
                     </div>
                     <div class=\"col-sm-3 my-sm-0 mt-5\">
                         <ul class=\"list-unstyled\">
-                            <li class=\"mt-0\">Company</li>
+                            <li class=\"mt-0\">Compañia</li>
                             <li><a href=\"mapaNav\">Mapa de navegación</a></li>
                             <li>Careers- <span class=\"Careers\">We're-hiring</span></li>
                         </ul>
@@ -756,45 +742,45 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
   <!-- Vendor JS Files -->
    <script src=\"";
-        // line 624
+        // line 604
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/aos/aos.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 625
+        // line 605
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 626
+        // line 606
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/glightbox/js/glightbox.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 627
+        // line 607
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/isotope-layout/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 628
+        // line 608
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/php-email-form/validate.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 629
+        // line 609
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/swiper/swiper-bundle.min.js"), "html", null, true);
         echo "\"></script>
 
   <!-- Template Main JS File -->
 <script src=\"";
-        // line 632
+        // line 612
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-3.3.1.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 633
+        // line 613
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 634
+        // line 614
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/search.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 635
+        // line 615
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/canales.js"), "html", null, true);
         echo "\"></script>
 
@@ -820,7 +806,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
     public function getDebugInfo()
     {
-        return array (  798 => 635,  794 => 634,  790 => 633,  786 => 632,  780 => 629,  776 => 628,  772 => 627,  768 => 626,  764 => 625,  760 => 624,  489 => 356,  475 => 345,  461 => 334,  447 => 323,  433 => 312,  406 => 288,  316 => 201,  308 => 196,  300 => 191,  292 => 186,  274 => 171,  212 => 112,  189 => 91,  183 => 87,  171 => 77,  166 => 75,  161 => 74,  156 => 72,  151 => 71,  149 => 70,  146 => 69,  143 => 68,  141 => 67,  119 => 48,  105 => 37,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
+        return array (  784 => 615,  780 => 614,  776 => 613,  772 => 612,  766 => 609,  762 => 608,  758 => 607,  754 => 606,  750 => 605,  746 => 604,  496 => 357,  482 => 346,  468 => 335,  454 => 324,  440 => 313,  413 => 289,  323 => 202,  315 => 197,  307 => 192,  299 => 187,  281 => 172,  219 => 113,  196 => 92,  190 => 88,  182 => 83,  175 => 78,  170 => 76,  165 => 75,  160 => 73,  155 => 72,  153 => 71,  150 => 70,  147 => 69,  145 => 68,  123 => 49,  109 => 38,  96 => 28,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -852,6 +838,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
   <!-- Template Main CSS File -->
   <link href=\"{{asset('styles/style.css')}}\" rel=\"stylesheet\">
+  <link href=\"{{asset('styles/spinner.css')}}\" rel=\"stylesheet\">
 
   <!-- Template Main CSS File -->
 
@@ -885,11 +872,11 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             </div>
           </li>
 
-          <li><a class=\"nav-link scrollto active\" href=\"#hero\">Home</a></li>
+          <li><a class=\"nav-link scrollto active\" href=\"#hero\">Inicio</a></li>
           <li><a class=\"nav-link scrollto\" href=\"#about\">Quienes somos</a></li>
           <li><a class=\"nav-link scrollto\" href=\"#services\">Servicios</a></li>
-          <li><a class=\"nav-link scrollto\" href=\"#team\">Team</a></li>
-          <li><a class=\"nav-link scrollto\" href=\"#pricing\">Pricing</a></li>
+          <li><a class=\"nav-link scrollto\" href=\"#team\">Equipo</a></li>
+          <li><a class=\"nav-link scrollto\" href=\"#pricing\">Ofertas</a></li>
 
           {% if is_granted('ROLE_USER') %}
           <li class=\"dropdown\">
@@ -906,7 +893,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             <ul>
             
               <li><a href=\"#\">Mi canal</a></li>
-              <li><a href=\"#\">Editar cuenta</a></li>
+              <li><a href={{\"/user/edit/\" ~ app.user.id}} >Editar cuenta</a></li>
               <li><a class=\"nav-link\" href=\"logout\">Cerrar Sesión</a></li>
             </ul>
           </li> 
@@ -1205,12 +1192,11 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
           <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
         </div>
 
-        <div class=\"row\">
+        <div class=\"row d-flex justify-content-center\">
 
-          <div class=\"col-lg-4 col-md-6\">
+          <div class=\"col-lg-4 col-md-6 col-sm-12\">
             <div class=\"box\" data-aos=\"zoom-in\" data-aos-delay=\"100\">
-              <h3>Free</h3>
-              <h4><sup>\$</sup>0<span> / month</span></h4>
+              <h3>Reserva</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -1224,11 +1210,10 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
             </div>
           </div>
 
-          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\">
+          <div class=\"col-lg-4 col-md-6 col-sm-12 mt-4 mt-md-0\">
             <div class=\"box recommended\" data-aos=\"zoom-in\">
               <span class=\"recommended-badge\">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>\$</sup>19<span> / month</span></h4>
+              <h3>Rutina</h3>
               <ul>
                 <li>Aida dere</li>
                 <li>Nec feugiat nisl</li>
@@ -1241,24 +1226,6 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
               </div>
             </div>
           </div>
-
-          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\">
-            <div class=\"box\" data-aos=\"zoom-in\" data-aos-delay=\"100\">
-              <h3>Developer</h3>
-              <h4><sup>\$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class=\"btn-wrap\">
-                <a href=\"#\" class=\"btn-buy\">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -1418,14 +1385,13 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                     </div>
                     <div class=\"col-sm-3 my-sm-0 mt-5\">
                         <ul class=\"list-unstyled\">
-                            <li class=\"mt-0\">Customers</li>
-                            <li>Use Cases</li>
-                            <li>Customers Services</li>
+                            <li class=\"mt-0\">Clientes</li>
+                            <li>Servicios de clientes</li>
                         </ul>
                     </div>
                     <div class=\"col-sm-3 my-sm-0 mt-5\">
                         <ul class=\"list-unstyled\">
-                            <li class=\"mt-0\">Company</li>
+                            <li class=\"mt-0\">Compañia</li>
                             <li><a href=\"mapaNav\">Mapa de navegación</a></li>
                             <li>Careers- <span class=\"Careers\">We're-hiring</span></li>
                         </ul>
@@ -1465,6 +1431,6 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 </body>
 
 </html>
-", "index/index.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\index\\index.html.twig");
+", "index/index.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\index\\index.html.twig");
     }
 }

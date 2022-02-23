@@ -35,9 +35,12 @@ security:
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
+    # En caso de no tener rol, te enviará a la ventana de login por defecto.
+    # En caso de corte, devolverá un error 403 diciendonos que tenemos el acceso denegado.
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+          - { path: ^/admin, roles: ROLE_ADMIN }
 
 when@test:
     security:

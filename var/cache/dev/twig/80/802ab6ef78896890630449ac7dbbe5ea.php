@@ -111,6 +111,6 @@ class __TwigTemplate_a56c826c92eaa1c526948bf72bb7cf21 extends Template
     
         </div>
     </div>
-</section>  ", "canales/canalesCabecera.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\canales\\canalesCabecera.html.twig");
+</section>  ", "canales/canalesCabecera.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\canales\\canalesCabecera.html.twig");
     }
 }

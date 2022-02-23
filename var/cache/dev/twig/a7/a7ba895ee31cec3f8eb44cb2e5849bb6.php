@@ -258,6 +258,6 @@ class __TwigTemplate_772d33b487ac0be14fb0e94f5611c7ae extends Template
                   
 
 {% endblock %}
-", "security/login.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\security\\login.html.twig");
     }
 }

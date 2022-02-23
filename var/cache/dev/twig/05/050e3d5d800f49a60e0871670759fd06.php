@@ -88,6 +88,6 @@ class __TwigTemplate_90ca6108f70c3a4f7dd828893eba3e5e extends Template
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\registration\\confirmation_email.html.twig");
     }
 }

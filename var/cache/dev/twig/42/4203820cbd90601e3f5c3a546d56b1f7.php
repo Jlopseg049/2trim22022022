@@ -125,6 +125,6 @@ class __TwigTemplate_7d967c5e4218f80505a26bc8e983056f extends Template
               </div>
             </div>
           </div>
-    {% endfor %}", "canales/canales.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\canales\\canales.html.twig");
+    {% endfor %}", "canales/canales.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\canales\\canales.html.twig");
     }
 }
