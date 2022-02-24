@@ -2,7 +2,11 @@
 body{
     overflow-x: hidden;
 }
-
+.logo{
+    font-family: 'Overpass', sans-serif;
+    height: 100%;
+    width: 60px;
+}
 .form-container{ font-family: 'Overpass', sans-serif; }
 .form-container .form-horizontal{
     background: linear-gradient(to right,#202926 49%,#15201C 50%);

@@ -146,67 +146,67 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 27
         echo "    <div class=\"container\">
-    
-
-
-\t<!-- main -->
+    <!-- main -->
 \t<div class=\"main-w3layouts wrapper mt-0\">
 \t\t<h1>Registro</h1>
 \t\t<div class=\"main-agileinfo\">
 \t\t\t<div class=\"agileits-top\">
                     ";
+        // line 33
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 33, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+        echo "
+                            ";
+        // line 34
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 34, $this->source); })()), "email", [], "any", false, false, false, 34), 'widget', ["attr" => ["class" => "form-control text email"]]);
+        echo "
+                            ";
+        // line 35
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 35, $this->source); })()), "username", [], "any", false, false, false, 35), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo "
+                            ";
         // line 36
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 36, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 36, $this->source); })()), "foto", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "form-control img"]]);
         echo "
                             ";
         // line 37
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 37, $this->source); })()), "email", [], "any", false, false, false, 37), 'widget', ["attr" => ["class" => "form-control text email"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 37, $this->source); })()), "name", [], "any", false, false, false, 37), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 38
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 38, $this->source); })()), "username", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 38, $this->source); })()), "ap1", [], "any", false, false, false, 38), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 39
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 39, $this->source); })()), "foto", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control img"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 39, $this->source); })()), "ap2", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control text"]]);
         echo "
                             ";
         // line 40
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 40, $this->source); })()), "name", [], "any", false, false, false, 40), 'widget', ["attr" => ["class" => "form-control text"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 40, $this->source); })()), "password", [], "any", false, false, false, 40), "first", [], "any", false, false, false, 40), 'widget', ["attr" => ["class" => "form-control text w3lpass"]]);
         echo "
                             ";
         // line 41
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 41, $this->source); })()), "ap1", [], "any", false, false, false, 41), 'widget', ["attr" => ["class" => "form-control text"]]);
-        echo "
-                            ";
-        // line 42
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 42, $this->source); })()), "ap2", [], "any", false, false, false, 42), 'widget', ["attr" => ["class" => "form-control text"]]);
-        echo "
-                            ";
-        // line 43
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 43, $this->source); })()), "password", [], "any", false, false, false, 43), "first", [], "any", false, false, false, 43), 'widget', ["attr" => ["class" => "form-control text w3lpass"]]);
-        echo "
-                            ";
-        // line 44
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 44, $this->source); })()), "password", [], "any", false, false, false, 44), "second", [], "any", false, false, false, 44), 'widget', ["attr" => ["class" => "form-control text w3lpass"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 41, $this->source); })()), "password", [], "any", false, false, false, 41), "second", [], "any", false, false, false, 41), 'widget', ["attr" => ["class" => "form-control text w3lpass"]]);
         echo "
                     <div class=\"wthree-text\">             
                         <label class=\"anim\">
                             ";
-        // line 47
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 47, $this->source); })()), "agreeTerms", [], "any", false, false, false, 47), 'widget', ["attr" => ["class" => "form-check checkbox"]]);
+        // line 44
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 44, $this->source); })()), "agreeTerms", [], "any", false, false, false, 44), 'widget', ["attr" => ["class" => "form-check checkbox"]]);
         echo "
-\t\t\t\t\t\t\t<span>I Agree To The Terms & Conditions</span>
+\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones</span>
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
+\t\t\t\t\t<input type=\"submit\" value=\"Registrate\">
                     ";
-        // line 53
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 53, $this->source); })()), 'form_end');
+        // line 50
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 50, $this->source); })()), 'form_end');
         echo "
-\t\t\t\t<p>Don't have an Account? <a href=\"login\"> Login Now!</a></p>
-\t\t\t</div>
+\t\t\t\t<p>¿Ya tienes cuenta? <a href=\"login\"> ¡Inicia sesión ya!</a></p>
+\t\t\t\t\t\t\t\t<br>
+\t\t\t\t\t<p><a href=\"/\">Vuelta a inicio</a></p>
+
+</div>
 \t\t</div>
 \t\t<ul class=\"colorlib-bubbles\">
 \t\t\t<li></li>
@@ -242,7 +242,7 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 
     public function getDebugInfo()
     {
-        return array (  206 => 53,  197 => 47,  191 => 44,  187 => 43,  183 => 42,  179 => 41,  175 => 40,  171 => 39,  167 => 38,  163 => 37,  159 => 36,  148 => 27,  139 => 25,  134 => 24,  127 => 23,  114 => 17,  110 => 15,  103 => 14,  94 => 11,  87 => 10,  78 => 7,  71 => 6,  63 => 4,  56 => 3,  39 => 1,);
+        return array (  203 => 50,  194 => 44,  188 => 41,  184 => 40,  180 => 39,  176 => 38,  172 => 37,  168 => 36,  164 => 35,  160 => 34,  156 => 33,  148 => 27,  139 => 25,  134 => 24,  127 => 23,  114 => 17,  110 => 15,  103 => 14,  94 => 11,  87 => 10,  78 => 7,  71 => 6,  63 => 4,  56 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -274,10 +274,7 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
         <div class=\"alert alert-danger\" role=\"alert\">{{ flashError }}</div>
     {% endfor %}
     <div class=\"container\">
-    
-
-
-\t<!-- main -->
+    <!-- main -->
 \t<div class=\"main-w3layouts wrapper mt-0\">
 \t\t<h1>Registro</h1>
 \t\t<div class=\"main-agileinfo\">
@@ -294,14 +291,17 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
                     <div class=\"wthree-text\">             
                         <label class=\"anim\">
                             {{ form_widget(registrationForm.agreeTerms,{'attr':{'class':'form-check checkbox'}}) }}
-\t\t\t\t\t\t\t<span>I Agree To The Terms & Conditions</span>
+\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones</span>
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
+\t\t\t\t\t<input type=\"submit\" value=\"Registrate\">
                     {{ form_end(registrationForm) }}
-\t\t\t\t<p>Don't have an Account? <a href=\"login\"> Login Now!</a></p>
-\t\t\t</div>
+\t\t\t\t<p>¿Ya tienes cuenta? <a href=\"login\"> ¡Inicia sesión ya!</a></p>
+\t\t\t\t\t\t\t\t<br>
+\t\t\t\t\t<p><a href=\"/\">Vuelta a inicio</a></p>
+
+</div>
 \t\t</div>
 \t\t<ul class=\"colorlib-bubbles\">
 \t\t\t<li></li>
@@ -322,6 +322,6 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 {% endblock %}
 
 
-", "registration/register.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\registration\\register.html.twig");
     }
 }

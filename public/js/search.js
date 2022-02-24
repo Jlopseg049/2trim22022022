@@ -37,7 +37,7 @@ $(()=>{
     //Buscador de canales +buscador-Canal+
     
     var busqueda = $('<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"></div>')
-
+    var error = $("<h2>No hay canales...</h2>")
 
     $(document.body).on('keyup', $('input[id=buscador]'),function() {
   
@@ -45,11 +45,17 @@ $(()=>{
                                                                     $('#buscador').val() : "all"),
                 function (data, textStatus, jqXHR) {
                     canales = data.response;
+                    if(canales== ""){
+                        $('#bloqueCanales').hide()
+                        $('#bloqueCanales').empty();
+
+                        $('#bloqueCanales').append(error[0]);
+                    } else{
                     $('#bloqueCanales').hide()
                     $('#bloqueCanales').empty();
                  $('#bloqueCanales').append(canales);
                     $('#bloqueCanales').show();
-                    
+                    }
                 });
       
     });

@@ -72,10 +72,10 @@ class __TwigTemplate_7d967c5e4218f80505a26bc8e983056f extends Template
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["canal"], "username", [], "any", false, false, false, 12), "html", null, true);
             echo "</p>
                 <div class=\"portfolio-links\">
-                  <a href=\"";
+                  <a href=";
             // line 14
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/portfolio/portfolio-9.jpg"), "html", null, true);
-            echo "\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"fa fa-eye\"></i></a>
+            echo twig_escape_filter($this->env, ("/stream/" . twig_get_attribute($this->env, $this->source, $context["canal"], "author_id", [], "any", false, false, false, 14)), "html", null, true);
+            echo " data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"fa fa-eye\"></i></a>
                 </div>
               </div>
             </div>
@@ -120,11 +120,11 @@ class __TwigTemplate_7d967c5e4218f80505a26bc8e983056f extends Template
                 <h4>{{canal.nombre}}</h4>
                 <p>{{canal.username}}</p>
                 <div class=\"portfolio-links\">
-                  <a href=\"{{asset('img/portfolio/portfolio-9.jpg')}}\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"fa fa-eye\"></i></a>
+                  <a href={{\"/stream/\" ~ canal.author_id}} data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"fa fa-eye\"></i></a>
                 </div>
               </div>
             </div>
           </div>
-    {% endfor %}", "canales/canales.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\canales\\canales.html.twig");
+    {% endfor %}", "canales/canales.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\canales\\canales.html.twig");
     }
 }

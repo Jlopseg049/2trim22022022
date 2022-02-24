@@ -50,7 +50,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
   <!-- Favicons -->
   <link href=\"";
         // line 12
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/favicon.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/StromZu-B.png"), "html", null, true);
         echo "\" rel=\"icon\">
   <link href=\"";
         // line 13
@@ -380,8 +380,12 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   <a data-bs-toggle=\"collapse\" class=\"collapse\" data-bs-target=\"#accordion-list-1\"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class=\"bx bx-chevron-down icon-show\"></i><i class=\"bx bx-chevron-up icon-close\"></i></a>
                   <div id=\"accordion-list-1\" class=\"collapse show\" data-bs-parent=\".accordion-list\">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
+<audio id=\"inicioMusic\" controls autoplay>
+    <source src=\"";
+        // line 262
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("audio/InicioMusic.mp3"), "html", null, true);
+        echo "\" type=\"audio/mpeg\">     
+</audio>                    </p>
                   </div>
                 </li>
 
@@ -409,7 +413,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
           </div>
 
           <div class=\"col-lg-5 order-1 order-lg-2 align-items-stretch video-box\" style='background-image: url(\"";
-        // line 289
+        // line 290
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/why-us.jpg"), "html", null, true);
         echo "\");' data-aos=\"zoom-in\">
             <a href=\"https://www.youtube.com/watch?v=LIqQNG_q2us\" class=\"venobox play-btn mb-4\" data-vbtype=\"video\" data-autoplay=\"true\"></a>
@@ -436,7 +440,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                 </p>
                 <img src=\"";
-        // line 313
+        // line 314
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-1.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Saul Goodman</h3>
@@ -450,7 +454,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                 </p>
                 <img src=\"";
-        // line 324
+        // line 325
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-2.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Sara Wilsson</h3>
@@ -464,7 +468,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                 </p>
                 <img src=\"";
-        // line 335
+        // line 336
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-3.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Jena Karlis</h3>
@@ -478,7 +482,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                 </p>
                 <img src=\"";
-        // line 346
+        // line 347
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-4.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>Matt Brandon</h3>
@@ -492,7 +496,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                 </p>
                 <img src=\"";
-        // line 357
+        // line 358
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/testimonials/testimonials-5.jpg"), "html", null, true);
         echo "\" class=\"testimonial-img\" alt=\"\">
                 <h3>John Larson</h3>
@@ -742,45 +746,45 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
   <!-- Vendor JS Files -->
    <script src=\"";
-        // line 604
+        // line 605
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/aos/aos.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 605
+        // line 606
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 606
+        // line 607
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/glightbox/js/glightbox.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 607
+        // line 608
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/isotope-layout/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 608
+        // line 609
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/php-email-form/validate.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 609
+        // line 610
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/swiper/swiper-bundle.min.js"), "html", null, true);
         echo "\"></script>
 
   <!-- Template Main JS File -->
 <script src=\"";
-        // line 612
+        // line 613
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-3.3.1.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 613
+        // line 614
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 614
+        // line 615
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/search.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 615
+        // line 616
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/canales.js"), "html", null, true);
         echo "\"></script>
 
@@ -806,7 +810,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
     public function getDebugInfo()
     {
-        return array (  784 => 615,  780 => 614,  776 => 613,  772 => 612,  766 => 609,  762 => 608,  758 => 607,  754 => 606,  750 => 605,  746 => 604,  496 => 357,  482 => 346,  468 => 335,  454 => 324,  440 => 313,  413 => 289,  323 => 202,  315 => 197,  307 => 192,  299 => 187,  281 => 172,  219 => 113,  196 => 92,  190 => 88,  182 => 83,  175 => 78,  170 => 76,  165 => 75,  160 => 73,  155 => 72,  153 => 71,  150 => 70,  147 => 69,  145 => 68,  123 => 49,  109 => 38,  96 => 28,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
+        return array (  788 => 616,  784 => 615,  780 => 614,  776 => 613,  770 => 610,  766 => 609,  762 => 608,  758 => 607,  754 => 606,  750 => 605,  500 => 358,  486 => 347,  472 => 336,  458 => 325,  444 => 314,  417 => 290,  386 => 262,  323 => 202,  315 => 197,  307 => 192,  299 => 187,  281 => 172,  219 => 113,  196 => 92,  190 => 88,  182 => 83,  175 => 78,  170 => 76,  165 => 75,  160 => 73,  155 => 72,  153 => 71,  150 => 70,  147 => 69,  145 => 68,  123 => 49,  109 => 38,  96 => 28,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -822,7 +826,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
   <meta content=\"\" name=\"keywords\">
 
   <!-- Favicons -->
-  <link href=\"{{asset('img/favicon.png')}}\" rel=\"icon\">
+  <link href=\"{{asset('img/StromZu-B.png')}}\" rel=\"icon\">
   <link href=\"{{asset('img/apple-touch-icon.png')}}\" rel=\"apple-touch-icon\">
 <script src=\"https://kit.fontawesome.com/a8b39d6af2.js\" crossorigin=\"anonymous\"></script>
   <!-- Google Fonts -->
@@ -1071,8 +1075,9 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
                   <a data-bs-toggle=\"collapse\" class=\"collapse\" data-bs-target=\"#accordion-list-1\"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class=\"bx bx-chevron-down icon-show\"></i><i class=\"bx bx-chevron-up icon-close\"></i></a>
                   <div id=\"accordion-list-1\" class=\"collapse show\" data-bs-parent=\".accordion-list\">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
+<audio id=\"inicioMusic\" controls autoplay>
+    <source src=\"{{asset('audio/InicioMusic.mp3')}}\" type=\"audio/mpeg\">     
+</audio>                    </p>
                   </div>
                 </li>
 
@@ -1431,6 +1436,6 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 </body>
 
 </html>
-", "index/index.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\index\\index.html.twig");
+", "index/index.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\index\\index.html.twig");
     }
 }

@@ -1,3 +1,4 @@
+
 /**
 * Template Name: Knight - v4.3.0
 * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -5,8 +6,9 @@
 * License: https://bootstrapmade.com/license/
 */
 (function() {
+  $("#inicioMusic").prop("volume", 0.1);
+  $("#inicioMusic")[0].play()
   "use strict";
-
   /**
    * Easy selector helper function
    */

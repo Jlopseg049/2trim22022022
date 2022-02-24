@@ -70,7 +70,7 @@ class CanalRepository extends ServiceEntityRepository
         //Aunque sí los acentos.
         $con = $this->getEntityManager()->getConnection();
         $author= "'".$author."%'";
-        $query ='select canal.id, canal.nombre, u.username, u.foto from canal
+        $query ='select canal.id, canal.author_id, canal.nombre, u.username, u.foto from canal
                     join "user" u on u.id = canal.author_id
                 where u.username  ILIKE  '. $author;
         $resul = $con->prepare($query);
@@ -83,7 +83,7 @@ class CanalRepository extends ServiceEntityRepository
     {
         $con = $this->getEntityManager()->getConnection();
         
-        $query ='select canal.id, canal.nombre, u.username, u.foto from canal
+        $query ='select canal.id, canal.author_id, canal.nombre, u.username, u.foto from canal
                     join "user" u on u.id = canal.author_id';
         $resul = $con->prepare($query);
         $ª=  $resul->execute();

@@ -7,7 +7,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
   }
-  
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+  .logo{
+    font-family: 'Overpass', sans-serif;
+    height: 100%;
+    width: 60px;
+}
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
   }
@@ -208,7 +215,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #fff;
   }
   
-  input[type="submit"] {
+  input[type="submit"],  a.submit {
     font-size: .9em;
     color: #fff;
     background: #76b852;
@@ -221,6 +228,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 2em 0;
     letter-spacing: 4px;
   }
+  a.submit{
+    margin-top: 40em;
+  }
   
   input[type="submit"]:hover {
     -webkit-transition: .5s all;
@@ -231,15 +241,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: #8DC26F;
   }
   
-  .agileits-top p {
+  .agileits-top p, p {
     font-size: 1em;
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 300;
-  }
+    padding-bottom: 10px;
+ }
   
-  .agileits-top p a {
+  .agileits-top p a, p a {
     color: #fff;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{# <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -6,13 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <script src="{{asset('js/captura.js')}}"></script>
-    
+
         <script src="{{asset('js/jquery-ui.min.js')}}"></script>
         <link rel="stylesheet" href="{{asset('styles/jquery-ui.min.css')}}">
-
+        <link rel="stylesheet" hred="{{asset('styles/dateTimePicker.css')}}">
     </head>
     <body>
     
@@ -37,33 +36,42 @@
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
         </div>
-        <div id="dialog"></div>
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button  class="btn btn-default" id="btnalert" >ALERT</button>
-                <button  class="btn btn-default" id="btndialog" >DIALOG</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-            </div>
+                {# Más adelante será un radio button que haga un intercambio de formularios. #}
+                {# Además en un futuro, se traerá el formulario de otra plantilla y será incorporada
+                    a partir de AJAX #}
+                    {# <h4>Reserva</h4>
+                    <input placeholder="From Date & Time" id="fdate" type="text"/>
+                    <input placeholder="To Date & Time" id="tdate" type="text"/>
+                    
+                    <input type="submit" value="Confirmar reserva"/>
 
-        </div>
-        </div>
-
-        <div id="dialog" hidden></div>
         <!-- Webcam video snapshot -->
-        {# <canvas id="canvas" width="640" height="480"></canvas> #}
+        <canvas id="canvas" width="640" height="480"></canvas>
         <script src="{{asset('js/reserva.js')}}"></script>
+        <script src="{{asset('js/dateTimePicker.js')}}"></script>
+
     </body>
-</html>
+</html> #} 
+<html>
+<head>
+        <link rel="stylesheet" href ="{{asset('styles/jquery.datetimepicker.min.css')}}">
+
+</head>
+<body>
+<input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
+<input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
+<input id="datetimepicker" type="text" >
+
+        <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="{{asset('js/jquery.datetimepicker.full.js')}}">
+
+</script>
+<script src="{{asset('js/datePicker.js')}}">
+</script>
+</body>
+</html

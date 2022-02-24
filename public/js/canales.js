@@ -15,17 +15,22 @@ $(()=>{
         body.appendTo(index);
         
           spinner.appendTo($('.altoMain')); 
-            // $.getJSON("https://www.stromzu.com:8000/canal/findAll",
-            //     function (data, textStatus, jqXHR) {
-            //       cabecera = data.responseHead;
-            //        cuerpo = data.responseBody;
-            //        canales.empty();
-            //         canales.append(cabecera);
-            //         canales.hide();
-            //         canales.appendTo($(".altoMain"));
-            //         $('#bloqueCanales').append(cuerpo);
-            //         canales.show(1500);
-            //       });
+            $.getJSON("https://www.stromzu.com:8000/canal/findAll",
+                function (data, textStatus, jqXHR) {
+                  cabecera = data.responseHead;
+                   cuerpo = data.responseBody;
+                   canales.empty();
+                    canales.append(cabecera);
+                    canales.hide();
+                    canales.appendTo($(".altoMain"));
+                    $('#bloqueCanales').append(cuerpo);
+                    spinner.hide(600);
+
+                    canales.show(1500);
+          }).fail(function(){                    
+
+            alert("ha habido un error de conexión");
+            location.reload();});
       });      
     });
 

@@ -178,11 +178,13 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
         echo "
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
+\t\t\t\t\t<input type=\"submit\" value=\"Confirmar cambios\">
                     ";
         // line 44
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["editUserForm"]) || array_key_exists("editUserForm", $context) ? $context["editUserForm"] : (function () { throw new RuntimeError('Variable "editUserForm" does not exist.', 44, $this->source); })()), 'form_end');
         echo "
+\t\t\t\t<p> <a href=\"/\">Volver a Inicio</a></p>
+
 \t\t\t</div>
 \t\t</div>
 \t\t<ul class=\"colorlib-bubbles\">
@@ -266,8 +268,10 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
                             {{ form_widget(editUserForm.ap2,{'attr':{'class':'form-control text'}}) }}
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"SIGNUP\">
+\t\t\t\t\t<input type=\"submit\" value=\"Confirmar cambios\">
                     {{ form_end(editUserForm) }}
+\t\t\t\t<p> <a href=\"/\">Volver a Inicio</a></p>
+
 \t\t\t</div>
 \t\t</div>
 \t\t<ul class=\"colorlib-bubbles\">
@@ -290,6 +294,6 @@ class __TwigTemplate_099fdd060d6ee593940a3b21d5bf64a8 extends Template
 
 
 
-", "usuarios/edit.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\usuarios\\edit.html.twig");
+", "usuarios/edit.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\usuarios\\edit.html.twig");
     }
 }

@@ -25,10 +25,7 @@
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
     <div class="container">
-    
-
-
-	<!-- main -->
+    <!-- main -->
 	<div class="main-w3layouts wrapper mt-0">
 		<h1>Registro</h1>
 		<div class="main-agileinfo">
@@ -45,14 +42,17 @@
                     <div class="wthree-text">             
                         <label class="anim">
                             {{ form_widget(registrationForm.agreeTerms,{'attr':{'class':'form-check checkbox'}}) }}
-							<span>I Agree To The Terms & Conditions</span>
+							<span>Estoy de acuerdo con los términos y condiciones</span>
 						</label>
 						<div class="clear"> </div>
 					</div>
-					<input type="submit" value="SIGNUP">
+					<input type="submit" value="Registrate">
                     {{ form_end(registrationForm) }}
-				<p>Don't have an Account? <a href="login"> Login Now!</a></p>
-			</div>
+				<p>¿Ya tienes cuenta? <a href="login"> ¡Inicia sesión ya!</a></p>
+								<br>
+					<p><a href="/">Vuelta a inicio</a></p>
+
+</div>
 		</div>
 		<ul class="colorlib-bubbles">
 			<li></li>
