@@ -24,9 +24,9 @@ $(()=>{
                     canales.hide();
                     canales.appendTo($(".altoMain"));
                     $('#bloqueCanales').append(cuerpo);
-                    spinner.hide(600);
-
+                    spinner.hide(1600);
                     canales.show(1500);
+
           }).fail(function(){                    
 
             alert("ha habido un error de conexión");
@@ -36,7 +36,8 @@ $(()=>{
 
     $(document.body).on('click', 'button[id=vueltaInicio]', function(){
       $("main").hide(2000, function() {
-        $(this).empty().append(index.children().first().children()).show(400);
+        // $(this).empty().append(index.children().first().children()).show(400);
+        location.reload();
       }
     )} );
   }); 

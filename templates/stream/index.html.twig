@@ -1,17 +1,18 @@
-{# <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-        <script src="{{asset('js/captura.js')}}"></script>
+                <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+            <script src="{{asset('js/jquery-ui.min.js')}}"></script>
+        <script src="{{asset('js/reserva.js')}}"></script>
 
-        <script src="{{asset('js/jquery-ui.min.js')}}"></script>
+        <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+        <script src="{{asset('js/captura.js')}}"></script>
+        <link rel="stylesheet" href ="{{asset('styles/jquery.datetimepicker.min.css')}}">
         <link rel="stylesheet" href="{{asset('styles/jquery-ui.min.css')}}">
-        <link rel="stylesheet" hred="{{asset('styles/dateTimePicker.css')}}">
     </head>
     <body>
     
@@ -36,42 +37,48 @@
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
         </div>
+<div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+</div>
+ 
+<button id="opener">Open Dialog</button>
+
+
+
+
 
                 {# Más adelante será un radio button que haga un intercambio de formularios. #}
                 {# Además en un futuro, se traerá el formulario de otra plantilla y será incorporada
                     a partir de AJAX #}
-                    {# <h4>Reserva</h4>
-                    <input placeholder="From Date & Time" id="fdate" type="text"/>
-                    <input placeholder="To Date & Time" id="tdate" type="text"/>
+                     
+{# <div id="dialog-form" title="Create new user">
+  <p class="validateTips">All form fields are required.</p>
+ 
+  <form>
+    <fieldset>
+    <input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
+    <input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
                     
                     <input type="submit" value="Confirmar reserva"/>
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>
+                     #}
 
         <!-- Webcam video snapshot -->
-        <canvas id="canvas" width="640" height="480"></canvas>
-        <script src="{{asset('js/reserva.js')}}"></script>
-        <script src="{{asset('js/dateTimePicker.js')}}"></script>
+        {# <canvas id="canvas" width="640" height="480"></canvas> #}
+   
 
+
+
+
+        <script src="{{asset('js/jquery.datetimepicker.full.js')}}">
+
+        </script>
+        <script src="{{asset('js/datePicker.js')}}">
+        </script>
     </body>
-</html> #} 
-<html>
-<head>
-        <link rel="stylesheet" href ="{{asset('styles/jquery.datetimepicker.min.css')}}">
-
-</head>
-<body>
-<input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
-<input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
-<input id="datetimepicker" type="text" >
-
-        <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script src="{{asset('js/jquery.datetimepicker.full.js')}}">
-
-</script>
-<script src="{{asset('js/datePicker.js')}}">
-</script>
-</body>
-</html
+</html> 

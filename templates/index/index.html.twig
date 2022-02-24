@@ -62,9 +62,10 @@
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Quienes somos</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Ofertas</a></li>
-
+          {% if is_granted('ROLE_ADMIN') %}
+                    <li><a class="nav-link scrollto" href="/admin">Admin</a></li>
+        {% endif %}
           {% if is_granted('ROLE_USER') %}
           <li class="dropdown">
             <a {#href="editaUsuario"#} >
@@ -258,7 +259,7 @@
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-<audio id="inicioMusic" controls autoplay>
+<audio id="inicioMusic" muted="muted" controls autoplay>
     <source src="{{asset('audio/InicioMusic.mp3')}}" type="audio/mpeg">     
 </audio>                    </p>
                   </div>

@@ -54,6 +54,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Canales', 'fas fa-list', Canal::class);
         yield MenuItem::linkToCrud('Reservas', 'fas fa-list', Reserva::class);
         yield MenuItem::linkToCrud('Rutinas', 'fas fa-list', Rutina::class);
+        yield MenuItem::linkToRoute('Vuelta a Inicio', 'fas fa-home', 'index');
 
 
 
