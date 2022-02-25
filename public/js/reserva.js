@@ -21,12 +21,14 @@
 $( function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
+      resizable: false,
+      width: "535.406px",
       show: {
         effect: "blind",
         duration: 1000
       },
       hide: {
-        effect: "explode",
+        effect: "blind",
         duration: 1000
       }
     });

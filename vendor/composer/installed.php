@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0f7e1b35981c6dad3105df284e5dde88b495c8d5',
+        'reference' => '3c9907141e22703bf298ab685833fed38f090adf',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0f7e1b35981c6dad3105df284e5dde88b495c8d5',
+            'reference' => '3c9907141e22703bf298ab685833fed38f090adf',
             'dev_requirement' => false,
         ),
         'behat/transliterator' => array(
@@ -190,6 +190,15 @@
             'reference' => '20c39c2de286a9d3262cc8ed282a4ae60e265894',
             'dev_requirement' => false,
         ),
+        'dompdf/dompdf' => array(
+            'pretty_version' => 'v1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../dompdf/dompdf',
+            'aliases' => array(),
+            'reference' => '60b704331479a69e9bcdb3496da2315b5c4f94fd',
+            'dev_requirement' => false,
+        ),
         'easycorp/easyadmin-bundle' => array(
             'pretty_version' => 'v4.0.4',
             'version' => '4.0.4.0',
@@ -276,6 +285,24 @@
             'replaced' => array(
                 0 => '^2.1',
             ),
+        ),
+        'phenx/php-font-lib' => array(
+            'pretty_version' => '0.5.4',
+            'version' => '0.5.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phenx/php-font-lib',
+            'aliases' => array(),
+            'reference' => 'dd448ad1ce34c63d09baccd05415e361300c35b4',
+            'dev_requirement' => false,
+        ),
+        'phenx/php-svg-lib' => array(
+            'pretty_version' => '0.4.0',
+            'version' => '0.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phenx/php-svg-lib',
+            'aliases' => array(),
+            'reference' => '3ffbbb037f0871c3a819e90cff8b36dd7e656189',
+            'dev_requirement' => false,
         ),
         'php-http/async-client-implementation' => array(
             'dev_requirement' => false,
@@ -412,6 +439,15 @@
             'provided' => array(
                 0 => '1.0|2.0|3.0',
             ),
+        ),
+        'sabberworm/php-css-parser' => array(
+            'pretty_version' => '8.4.0',
+            'version' => '8.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sabberworm/php-css-parser',
+            'aliases' => array(),
+            'reference' => 'e41d2140031d533348b2192a83f02d8dd8a71d30',
+            'dev_requirement' => false,
         ),
         'sensio/framework-extra-bundle' => array(
             'pretty_version' => 'v6.2.6',

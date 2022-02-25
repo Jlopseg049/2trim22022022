@@ -103,40 +103,99 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
         <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button>
 
         </div>
-<div id=\"dialog\" title=\"Basic dialog\">
-  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+    ";
+        // line 40
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
+            // line 41
+            echo "
+<div id=\"dialog\" title=";
+            // line 42
+            echo twig_escape_filter($this->env, ("Reserva en " . twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 42, $this->source); })()), "nombre", [], "any", false, false, false, 42)), "html", null, true);
+            echo ">
+       ";
+            // line 43
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 43, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+            echo "
+                <div class=\"row g-3 align-items-center\">
+                        ";
+            // line 45
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 45, $this->source); })()), "cliente", [], "any", false, false, false, 45), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 45, $this->source); })()), "user", [], "any", false, false, false, 45), "id", [], "any", false, false, false, 45)]]);
+            echo "
+                        ";
+            // line 46
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 46, $this->source); })()), "canal", [], "any", false, false, false, 46), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 46, $this->source); })()), "id", [], "any", false, false, false, 46)]]);
+            echo "
+                        ";
+            // line 47
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 47, $this->source); })()), "precio", [], "any", false, false, false, 47), 'widget');
+            echo "
+
+                    <div class=\"col-md-6 col-sm-12\">
+                        ";
+            // line 50
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 50, $this->source); })()), "fechaInicio", [], "any", false, false, false, 50), 'widget', ["attr" => ["class" => "form-control text email"]]);
+            echo "
+                    </div>
+                    <div class=\"col-md-6 col-sm-12\">
+                        ";
+            // line 53
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 53, $this->source); })()), "fechaFin", [], "any", false, false, false, 53), 'widget', ["attr" => ["class" => "form-control text"]]);
+            echo "
+                    </div>
+                </div>
+
+                <div class=\"row mt-4\">
+                        <div class=\"col-md-6 col-sm-12\">
+                            <p>Precio por hora: <span id=\"precioHora\">";
+            // line 59
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 59, $this->source); })()), "precio", [], "any", false, false, false, 59), "html", null, true);
+            echo "</span>.00€</p>
+                        </div>
+                        <div class=\"col-md-6 col-sm-12\" id=\"precioTotal\">
+                        </div>
+                </div>                        
+
+                <div class=\"row \"></div>                        
+                <input type=\"submit\" value=\"Confirmar reserva\"/>
+        ";
+            // line 67
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 67, $this->source); })()), 'form_end');
+            echo "
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
 <button id=\"opener\">Open Dialog</button>
 
 
-
-
+";
+        }
+        // line 75
+        echo "
 
                 ";
-        // line 51
+        // line 78
         echo "                ";
-        // line 53
+        // line 80
         echo "                     
 ";
-        // line 70
+        // line 97
         echo "
         <!-- Webcam video snapshot -->
         ";
-        // line 73
+        // line 100
         echo "   
 
 
 
 
         <script src=\"";
-        // line 78
+        // line 105
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.datetimepicker.full.js"), "html", null, true);
         echo "\">
 
         </script>
         <script src=\"";
-        // line 81
+        // line 108
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/datePicker.js"), "html", null, true);
         echo "\">
         </script>
@@ -160,7 +219,7 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
 
     public function getDebugInfo()
     {
-        return array (  140 => 81,  134 => 78,  127 => 73,  123 => 70,  120 => 53,  118 => 51,  97 => 32,  85 => 23,  74 => 15,  70 => 14,  66 => 13,  62 => 12,  57 => 10,  53 => 9,  49 => 8,  40 => 1,);
+        return array (  199 => 108,  193 => 105,  186 => 100,  182 => 97,  179 => 80,  177 => 78,  173 => 75,  162 => 67,  151 => 59,  142 => 53,  136 => 50,  130 => 47,  126 => 46,  122 => 45,  117 => 43,  113 => 42,  110 => 41,  108 => 40,  97 => 32,  85 => 23,  74 => 15,  70 => 14,  66 => 13,  62 => 12,  57 => 10,  53 => 9,  49 => 8,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -204,14 +263,41 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
         <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button>
 
         </div>
-<div id=\"dialog\" title=\"Basic dialog\">
-  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+    {% if is_granted('ROLE_USER') %}
+
+<div id=\"dialog\" title={{\"Reserva en \" ~ canal.nombre}}>
+       {{ form_start(reservaForm,{'attr':{'class':'form-control'}}) }}
+                <div class=\"row g-3 align-items-center\">
+                        {{ form_widget(reservaForm.cliente,{'attr':{'value': app.user.id }}) }}
+                        {{ form_widget(reservaForm.canal,{'attr':{'value':canal.id }}) }}
+                        {{ form_widget(reservaForm.precio) }}
+
+                    <div class=\"col-md-6 col-sm-12\">
+                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email'}}) }}
+                    </div>
+                    <div class=\"col-md-6 col-sm-12\">
+                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text'}}) }}
+                    </div>
+                </div>
+
+                <div class=\"row mt-4\">
+                        <div class=\"col-md-6 col-sm-12\">
+                            <p>Precio por hora: <span id=\"precioHora\">{{ canal.precio}}</span>.00€</p>
+                        </div>
+                        <div class=\"col-md-6 col-sm-12\" id=\"precioTotal\">
+                        </div>
+                </div>                        
+
+                <div class=\"row \"></div>                        
+                <input type=\"submit\" value=\"Confirmar reserva\"/>
+        {{ form_end(reservaForm) }}
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
 <button id=\"opener\">Open Dialog</button>
 
 
-
+{% endif %}
 
 
                 {# Más adelante será un radio button que haga un intercambio de formularios. #}
@@ -221,17 +307,17 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
 {# <div id=\"dialog-form\" title=\"Create new user\">
   <p class=\"validateTips\">All form fields are required.</p>
  
-  <form>
-    <fieldset>
-    <input placeholder=\"Fecha Reserva Inicio\" id=\"dateInicio\" type=\"text\"/>
-    <input placeholder=\"Fecha Reserva Fin\" id=\"dateFin\" type=\"text\"/>
-                    
-                    <input type=\"submit\" value=\"Confirmar reserva\"/>
- 
-      <!-- Allow form submission with keyboard without duplicating the dialog button -->
-      <input type=\"submit\" tabindex=\"-1\" style=\"position:absolute; top:-1000px\">
-    </fieldset>
-  </form>
+        <form>
+            <fieldset>
+            <input placeholder=\"Fecha Reserva Inicio\" id=\"dateInicio\" type=\"text\"/>
+            <input placeholder=\"Fecha Reserva Fin\" id=\"dateFin\" type=\"text\"/>
+                            
+                            <input type=\"submit\" value=\"Confirmar reserva\"/>
+        
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type=\"submit\" tabindex=\"-1\" style=\"position:absolute; top:-1000px\">
+            </fieldset>
+        </form>
 </div>
                      #}
 

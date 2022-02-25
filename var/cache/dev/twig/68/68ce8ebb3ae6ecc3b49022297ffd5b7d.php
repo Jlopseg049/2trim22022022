@@ -269,6 +269,6 @@ class __TwigTemplate_c727de2acc2c0d0eaebbd2ae1978fb52 extends Template
 {% endblock %}
 
 
-", "mapa_nav/index.html.twig", "C:\\Users\\alumno\\Desktop\\StromZu\\templates\\mapa_nav\\index.html.twig");
+", "mapa_nav/index.html.twig", "C:\\Users\\Kazu\\Desktop\\StromZu\\templates\\mapa_nav\\index.html.twig");
     }
 }

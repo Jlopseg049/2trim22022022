@@ -283,9 +283,9 @@ class Form implements \IteratorAggregate, FormInterface, ClearableErrorsInterfac
         // If the form is submitted while disabled, it is set to submitted, but the data is not
         // changed. In such cases (i.e. when the form is not initialized yet) don't
         // abort this method.
-        if ($this->submitted && $this->defaultDataSet) {
-            throw new AlreadySubmittedException('You cannot change the data of a submitted form.');
-        }
+        // if ($this->submitted && $this->defaultDataSet) {
+        //     throw new AlreadySubmittedException('You cannot change the data of a submitted form.');
+        // }
 
         // If the form inherits its parent's data, disallow data setting to
         // prevent merge conflicts
@@ -714,9 +714,11 @@ class Form implements \IteratorAggregate, FormInterface, ClearableErrorsInterfac
      */
     public function isValid(): bool
     {
-        if (!$this->submitted) {
-            throw new LogicException('Cannot check if an unsubmitted form is valid. Call Form::isSubmitted() before Form::isValid().');
-        }
+
+        //Comento esta línea para poder editar un formulario despues de hacer un submit
+        // if (!$this->submitted) {
+        //     throw new LogicException('Cannot check if an unsubmitted form is valid. Call Form::isSubmitted() before Form::isValid().');
+        // }
 
         if ($this->isDisabled()) {
             return true;

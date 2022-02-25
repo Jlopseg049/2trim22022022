@@ -1,0 +1,7 @@
+.icon {
+    background: url('/img/StromZu-W.png');
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    /* Other styles here */
+}

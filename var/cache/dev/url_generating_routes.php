@@ -10,6 +10,7 @@ return [
     'CanalAuthor_show' => [['author'], ['_controller' => 'App\\Controller\\CanalController::findCanalByAuthor'], [], [['variable', '/', '[^/]++', 'author', true], ['text', '/canal/find']], [], [], []],
     'CanalAdd' => [['id'], ['_controller' => 'App\\Controller\\CanalController::addCanal'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/canal/crear']], [], [], []],
     'mapa_nav' => [[], ['_controller' => 'App\\Controller\\MapaNavController::index'], [], [['text', '/mapaNav']], [], [], []],
+    'p_d_f' => [[], ['_controller' => 'App\\Controller\\PDFController::index'], [], [['text', '/pdf']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_verify_email' => [[], ['_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], [], [['text', '/verify/email']], [], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\RootController::index'], [], [['text', '/']], [], [], []],

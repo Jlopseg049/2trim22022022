@@ -37,14 +37,41 @@
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
         </div>
-<div id="dialog" title="Basic dialog">
-  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+    {% if is_granted('ROLE_USER') %}
+
+<div id="dialog" title={{"Reserva en " ~ canal.nombre}}>
+       {{ form_start(reservaForm,{'attr':{'class':'form-control'}}) }}
+                <div class="row g-3 align-items-center">
+                        {{ form_widget(reservaForm.cliente,{'attr':{'value': app.user.id }}) }}
+                        {{ form_widget(reservaForm.canal,{'attr':{'value':canal.id }}) }}
+                        {{ form_widget(reservaForm.precio) }}
+
+                    <div class="col-md-6 col-sm-12">
+                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email'}}) }}
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text'}}) }}
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Precio por hora: <span id="precioHora">{{ canal.precio}}</span>.00€</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12" id="precioTotal">
+                        </div>
+                </div>                        
+
+                <div class="row "></div>                        
+                <input type="submit" value="Confirmar reserva"/>
+        {{ form_end(reservaForm) }}
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
 <button id="opener">Open Dialog</button>
 
 
-
+{% endif %}
 
 
                 {# Más adelante será un radio button que haga un intercambio de formularios. #}
@@ -54,17 +81,17 @@
 {# <div id="dialog-form" title="Create new user">
   <p class="validateTips">All form fields are required.</p>
  
-  <form>
-    <fieldset>
-    <input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
-    <input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
-                    
-                    <input type="submit" value="Confirmar reserva"/>
- 
-      <!-- Allow form submission with keyboard without duplicating the dialog button -->
-      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-    </fieldset>
-  </form>
+        <form>
+            <fieldset>
+            <input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
+            <input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
+                            
+                            <input type="submit" value="Confirmar reserva"/>
+        
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
 </div>
                      #}
 
