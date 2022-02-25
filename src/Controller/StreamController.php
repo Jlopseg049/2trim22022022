@@ -43,20 +43,22 @@ class StreamController extends AbstractController
             ->findOneById(intval($form->get('canal')->getViewData())));
             $form->get('precio')->setData(number_format(floatval($form->get('precio')->getViewData()), 2));
 
-            $form->get('fechaInicio')->setData(\DateTime::createFromFormat('d/m/Y H:i', 
-            $form->get('fechaInicio')->getViewData()));
+            // $form->get('fechaInicio')->setData(\DateTime::createFromFormat('d/m/Y H:i', 
+            // $form->get('fechaInicio')->getViewData()));
        
-            $form->get('fechaFin')->setData(\DateTime::createFromFormat('d/m/Y H:i', 
-            $form->get('fechaFin')->getViewData()));
+            // $form->get('fechaFin')->setData(\DateTime::createFromFormat('d/m/Y H:i', 
+            // $form->get('fechaFin')->getViewData()));
             
             
             $reserva->setCliente( $form->get('cliente')->getViewData());
             $reserva->setCanal( $form->get('canal')->getViewData());
             $reserva->setPrecio( $form->get('precio')->getViewData());
-            $reserva->setFechaInicio( $form->get('fechaInicio')->getViewData());
-            $reserva->setFechaFin( $form->get('fechaFin')->getViewData());
+            $reserva->setFechaInicio( \DateTime::createFromFormat('d/m/Y H:i', 
+            $form->get('fechaInicio')->getViewData()));
+            $reserva->setFechaFin( \DateTime::createFromFormat('d/m/Y H:i', 
+            $form->get('fechaFin')->getViewData()));
             // dd($reserva);
-            $entityManager->persist($user);
+            $entityManager->persist($reserva);
             $entityManager->flush();
         }
         $Canal = $doctrine->getRepository(Canal::class)->findOneById($canalId);
