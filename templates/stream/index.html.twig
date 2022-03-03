@@ -8,17 +8,23 @@
                 <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
             <script src="{{asset('js/jquery-ui.min.js')}}"></script>
         <script src="{{asset('js/reserva.js')}}"></script>
-
-        <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('styles/bootstrap.min.css')}}" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
         <script src="{{asset('js/captura.js')}}"></script>
         <link rel="stylesheet" href ="{{asset('styles/jquery.datetimepicker.min.css')}}">
         <link rel="stylesheet" href="{{asset('styles/jquery-ui.min.css')}}">
+          <link href="{{asset('styles/logo.css')}}" rel="stylesheet">
+
     </head>
     <body>
-    
-    <sytle>
-  
-    </sytle>
+  <nav class="navbar navbar-dark bg-dark">
+                  <a class="d-flex text-decoration-none text-dark" href="/">
+                    <img class="logo" src="{{asset('/img/StromZu-W.png')}}" alt="StromZu-Logo"/>
+                    <h1 class="text-decoration-none text-light">StromZu</h1>
+                </a>
+</nav>
         <header>
             <h1>Bienvenido a {{canal.nombre}}</h1>
         </header>
@@ -34,7 +40,6 @@
         <!-- Trigger canvas web API -->
         <div class="controller">
             <button id="snap">Capture</button>
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
         </div>
     {% if is_granted('ROLE_USER') %}
@@ -47,10 +52,10 @@
                         {{ form_widget(reservaForm.precio) }}
 
                     <div class="col-md-6 col-sm-12">
-                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email'}}) }}
+                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email', "autocomplete": "off"}}) }}
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text'}}) }}
+                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text' , "autocomplete": "off"}}) }}
                     </div>
                 </div>
 
@@ -68,7 +73,7 @@
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
-<button id="opener">Open Dialog</button>
+<button id="opener" class="btn btn-success btn-lg">Open Dialog</button>
 
 
 {% endif %}
@@ -78,27 +83,6 @@
                 {# Además en un futuro, se traerá el formulario de otra plantilla y será incorporada
                     a partir de AJAX #}
                      
-{# <div id="dialog-form" title="Create new user">
-  <p class="validateTips">All form fields are required.</p>
- 
-        <form>
-            <fieldset>
-            <input placeholder="Fecha Reserva Inicio" id="dateInicio" type="text"/>
-            <input placeholder="Fecha Reserva Fin" id="dateFin" type="text"/>
-                            
-                            <input type="submit" value="Confirmar reserva"/>
-        
-            <!-- Allow form submission with keyboard without duplicating the dialog button -->
-            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-            </fieldset>
-        </form>
-</div>
-                     #}
-
-        <!-- Webcam video snapshot -->
-        {# <canvas id="canvas" width="640" height="480"></canvas> #}
-   
-
 
 
 

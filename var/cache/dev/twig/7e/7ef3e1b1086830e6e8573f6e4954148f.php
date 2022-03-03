@@ -56,33 +56,45 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
         // line 10
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/reserva.js"), "html", null, true);
         echo "\"></script>
-
-        <link href=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/bootstrap/css/bootstrap.min.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/bootstrap.min.css"), "html", null, true);
+        echo "\" type=\"text/css\">
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap\" rel=\"stylesheet\">
         <script src=\"";
-        // line 13
+        // line 15
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/captura.js"), "html", null, true);
         echo "\"></script>
         <link rel=\"stylesheet\" href =\"";
-        // line 14
+        // line 16
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/jquery.datetimepicker.min.css"), "html", null, true);
         echo "\">
         <link rel=\"stylesheet\" href=\"";
-        // line 15
+        // line 17
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/jquery-ui.min.css"), "html", null, true);
         echo "\">
+          <link href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/logo.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+
     </head>
     <body>
-    
-    <sytle>
-  
-    </sytle>
+  <nav class=\"navbar navbar-dark bg-dark\">
+                  <a class=\"d-flex text-decoration-none text-dark\" href=\"/\">
+                    <img class=\"logo\" src=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/img/StromZu-W.png"), "html", null, true);
+        echo "\" alt=\"StromZu-Logo\"/>
+                    <h1 class=\"text-decoration-none text-light\">StromZu</h1>
+                </a>
+</nav>
         <header>
             <h1>Bienvenido a ";
-        // line 23
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 23, $this->source); })()), "nombre", [], "any", false, false, false, 23), "html", null, true);
+        // line 29
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 29, $this->source); })()), "nombre", [], "any", false, false, false, 29), "html", null, true);
         echo "</h1>
         </header>
         <!-- Stream video via webcam -->
@@ -93,53 +105,52 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
         </div>
         <section>
         ";
-        // line 32
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 32, $this->source); })()), "descripcion", [], "any", false, false, false, 32), "html", null, true);
+        // line 38
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 38, $this->source); })()), "descripcion", [], "any", false, false, false, 38), "html", null, true);
         echo "
         </section>
         <!-- Trigger canvas web API -->
         <div class=\"controller\">
             <button id=\"snap\">Capture</button>
-        <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button>
 
         </div>
     ";
-        // line 40
+        // line 45
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 41
+            // line 46
             echo "
 <div id=\"dialog\" title=";
-            // line 42
-            echo twig_escape_filter($this->env, ("Reserva en " . twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 42, $this->source); })()), "nombre", [], "any", false, false, false, 42)), "html", null, true);
+            // line 47
+            echo twig_escape_filter($this->env, ("Reserva en " . twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 47, $this->source); })()), "nombre", [], "any", false, false, false, 47)), "html", null, true);
             echo ">
        ";
-            // line 43
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 43, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+            // line 48
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 48, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
             echo "
                 <div class=\"row g-3 align-items-center\">
                         ";
-            // line 45
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 45, $this->source); })()), "cliente", [], "any", false, false, false, 45), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 45, $this->source); })()), "user", [], "any", false, false, false, 45), "id", [], "any", false, false, false, 45)]]);
+            // line 50
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 50, $this->source); })()), "cliente", [], "any", false, false, false, 50), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), "id", [], "any", false, false, false, 50)]]);
             echo "
                         ";
-            // line 46
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 46, $this->source); })()), "canal", [], "any", false, false, false, 46), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 46, $this->source); })()), "id", [], "any", false, false, false, 46)]]);
+            // line 51
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 51, $this->source); })()), "canal", [], "any", false, false, false, 51), 'widget', ["attr" => ["value" => twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 51, $this->source); })()), "id", [], "any", false, false, false, 51)]]);
             echo "
                         ";
-            // line 47
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 47, $this->source); })()), "precio", [], "any", false, false, false, 47), 'widget');
+            // line 52
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 52, $this->source); })()), "precio", [], "any", false, false, false, 52), 'widget');
             echo "
 
                     <div class=\"col-md-6 col-sm-12\">
                         ";
-            // line 50
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 50, $this->source); })()), "fechaInicio", [], "any", false, false, false, 50), 'widget', ["attr" => ["class" => "form-control text email"]]);
+            // line 55
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 55, $this->source); })()), "fechaInicio", [], "any", false, false, false, 55), 'widget', ["attr" => ["class" => "form-control text email", "autocomplete" => "off"]]);
             echo "
                     </div>
                     <div class=\"col-md-6 col-sm-12\">
                         ";
-            // line 53
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 53, $this->source); })()), "fechaFin", [], "any", false, false, false, 53), 'widget', ["attr" => ["class" => "form-control text"]]);
+            // line 58
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 58, $this->source); })()), "fechaFin", [], "any", false, false, false, 58), 'widget', ["attr" => ["class" => "form-control text", "autocomplete" => "off"]]);
             echo "
                     </div>
                 </div>
@@ -147,8 +158,8 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
                 <div class=\"row mt-4\">
                         <div class=\"col-md-6 col-sm-12\">
                             <p>Precio por hora: <span id=\"precioHora\">";
-            // line 59
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 59, $this->source); })()), "precio", [], "any", false, false, false, 59), "html", null, true);
+            // line 64
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["canal"]) || array_key_exists("canal", $context) ? $context["canal"] : (function () { throw new RuntimeError('Variable "canal" does not exist.', 64, $this->source); })()), "precio", [], "any", false, false, false, 64), "html", null, true);
             echo "</span>.00€</p>
                         </div>
                         <div class=\"col-md-6 col-sm-12\" id=\"precioTotal\">
@@ -158,44 +169,44 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
                 <div class=\"row \"></div>                        
                 <input type=\"submit\" value=\"Confirmar reserva\"/>
         ";
-            // line 67
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 67, $this->source); })()), 'form_end');
+            // line 72
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reservaForm"]) || array_key_exists("reservaForm", $context) ? $context["reservaForm"] : (function () { throw new RuntimeError('Variable "reservaForm" does not exist.', 72, $this->source); })()), 'form_end');
             echo "
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
-<button id=\"opener\">Open Dialog</button>
+<button id=\"opener\" class=\"btn btn-success btn-lg\">Open Dialog</button>
 
 
 ";
         }
-        // line 75
+        // line 80
         echo "
 
                 ";
-        // line 78
+        // line 83
         echo "                ";
-        // line 80
+        // line 85
         echo "                     
 ";
-        // line 97
+        // line 102
         echo "
         <!-- Webcam video snapshot -->
         ";
-        // line 100
+        // line 105
         echo "   
 
 
 
 
         <script src=\"";
-        // line 105
+        // line 110
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.datetimepicker.full.js"), "html", null, true);
         echo "\">
 
         </script>
         <script src=\"";
-        // line 108
+        // line 113
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/datePicker.js"), "html", null, true);
         echo "\">
         </script>
@@ -219,7 +230,7 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
 
     public function getDebugInfo()
     {
-        return array (  199 => 108,  193 => 105,  186 => 100,  182 => 97,  179 => 80,  177 => 78,  173 => 75,  162 => 67,  151 => 59,  142 => 53,  136 => 50,  130 => 47,  126 => 46,  122 => 45,  117 => 43,  113 => 42,  110 => 41,  108 => 40,  97 => 32,  85 => 23,  74 => 15,  70 => 14,  66 => 13,  62 => 12,  57 => 10,  53 => 9,  49 => 8,  40 => 1,);
+        return array (  210 => 113,  204 => 110,  197 => 105,  193 => 102,  190 => 85,  188 => 83,  184 => 80,  173 => 72,  162 => 64,  153 => 58,  147 => 55,  141 => 52,  137 => 51,  133 => 50,  128 => 48,  124 => 47,  121 => 46,  119 => 45,  109 => 38,  97 => 29,  89 => 24,  80 => 18,  76 => 17,  72 => 16,  68 => 15,  61 => 11,  57 => 10,  53 => 9,  49 => 8,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -234,17 +245,23 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
                 <script src=\"{{asset('js/jquery-3.3.1.min.js')}}\"></script>
             <script src=\"{{asset('js/jquery-ui.min.js')}}\"></script>
         <script src=\"{{asset('js/reserva.js')}}\"></script>
-
-        <link href=\"{{asset('vendor/bootstrap/css/bootstrap.min.css')}}\" rel=\"stylesheet\">
+    <link rel=\"stylesheet\" href=\"{{asset('styles/bootstrap.min.css')}}\" type=\"text/css\">
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap\" rel=\"stylesheet\">
         <script src=\"{{asset('js/captura.js')}}\"></script>
         <link rel=\"stylesheet\" href =\"{{asset('styles/jquery.datetimepicker.min.css')}}\">
         <link rel=\"stylesheet\" href=\"{{asset('styles/jquery-ui.min.css')}}\">
+          <link href=\"{{asset('styles/logo.css')}}\" rel=\"stylesheet\">
+
     </head>
     <body>
-    
-    <sytle>
-  
-    </sytle>
+  <nav class=\"navbar navbar-dark bg-dark\">
+                  <a class=\"d-flex text-decoration-none text-dark\" href=\"/\">
+                    <img class=\"logo\" src=\"{{asset('/img/StromZu-W.png')}}\" alt=\"StromZu-Logo\"/>
+                    <h1 class=\"text-decoration-none text-light\">StromZu</h1>
+                </a>
+</nav>
         <header>
             <h1>Bienvenido a {{canal.nombre}}</h1>
         </header>
@@ -260,7 +277,6 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
         <!-- Trigger canvas web API -->
         <div class=\"controller\">
             <button id=\"snap\">Capture</button>
-        <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button>
 
         </div>
     {% if is_granted('ROLE_USER') %}
@@ -273,10 +289,10 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
                         {{ form_widget(reservaForm.precio) }}
 
                     <div class=\"col-md-6 col-sm-12\">
-                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email'}}) }}
+                        {{ form_widget(reservaForm.fechaInicio,{'attr':{'class':'form-control text email', \"autocomplete\": \"off\"}}) }}
                     </div>
                     <div class=\"col-md-6 col-sm-12\">
-                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text'}}) }}
+                        {{ form_widget(reservaForm.fechaFin,{'attr':{'class':'form-control text' , \"autocomplete\": \"off\"}}) }}
                     </div>
                 </div>
 
@@ -294,7 +310,7 @@ class __TwigTemplate_d1305264a3adf2090fae822a08fe0682 extends Template
             <!-- Allow form submission with keyboard without duplicating the dialog button -->
 </div>
  
-<button id=\"opener\">Open Dialog</button>
+<button id=\"opener\" class=\"btn btn-success btn-lg\">Open Dialog</button>
 
 
 {% endif %}

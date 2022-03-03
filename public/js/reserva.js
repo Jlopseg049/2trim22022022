@@ -22,7 +22,10 @@ $( function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
       resizable: false,
-      width: "535.406px",
+     height: 222.178,
+
+      width: 535.406,
+      
       show: {
         effect: "blind",
         duration: 1000

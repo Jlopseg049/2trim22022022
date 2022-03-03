@@ -30,7 +30,7 @@
 		<h1>Registro</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-                    {{ form_start(registrationForm,{'attr':{'class':'form-control'}}) }}
+                    {{ form_start(registrationForm,{'attr':{'class':'form-control','id':'registration_form'}}) }}
                             {{ form_widget(registrationForm.email,{'attr':{'class':'form-control text email'}}) }}
                             {{ form_widget(registrationForm.username,{'attr':{'class':'form-control text'}}) }}
                             {{ form_widget(registrationForm.foto,{'attr':{'class':'form-control img'}}) }}
@@ -42,11 +42,11 @@
                     <div class="wthree-text">             
                         <label class="anim">
                             {{ form_widget(registrationForm.agreeTerms,{'attr':{'class':'form-check checkbox'}}) }}
-							<span>Estoy de acuerdo con los términos y condiciones</span>
+							<span>Estoy de acuerdo con los términos y condiciones<br></span>
 						</label>
 						<div class="clear"> </div>
 					</div>
-					<input type="submit" value="Registrate">
+					<input type="submit" id="registerSubmit" value="Registrate">
                     {{ form_end(registrationForm) }}
 				<p>¿Ya tienes cuenta? <a href="login"> ¡Inicia sesión ya!</a></p>
 								<br>
@@ -67,6 +67,9 @@
 			<li></li>
 		</ul>
 	</div>
+	<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="{{asset('js/validator.js')}}"></script>
 	<!-- //main -->
 </body>
 </html>

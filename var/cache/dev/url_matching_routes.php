@@ -21,22 +21,30 @@ return [
     [ // $regexpList
         0 => '{^(?'
                 .'|/_error/(\\d+)(?:\\.([^/]++))?(*:35)'
-                .'|/canal/(?'
-                    .'|precio/([^/]++)(*:67)'
-                    .'|find/([^/]++)(*:87)'
-                    .'|crear/([^/]++)(*:108)'
+                .'|/c(?'
+                    .'|anal/(?'
+                        .'|precio/([^/]++)(*:70)'
+                        .'|find/([^/]++)(*:90)'
+                        .'|crear/([^/]++)(*:111)'
+                    .')'
+                    .'|heck/(?'
+                        .'|email/([^/]++)(*:142)'
+                        .'|user/([^/]++)(*:163)'
+                    .')'
                 .')'
-                .'|/stream/([^/]++)(*:133)'
-                .'|/user/edit/([^/]++)(*:160)'
+                .'|/stream/([^/]++)(*:189)'
+                .'|/user/edit/([^/]++)(*:216)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
         35 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        67 => [[['_route' => 'precioCanal_show', '_controller' => 'App\\Controller\\CanalController::findPrecioByAuthor'], ['author'], null, null, false, true, null]],
-        87 => [[['_route' => 'CanalAuthor_show', '_controller' => 'App\\Controller\\CanalController::findCanalByAuthor'], ['author'], null, null, false, true, null]],
-        108 => [[['_route' => 'CanalAdd', '_controller' => 'App\\Controller\\CanalController::addCanal'], ['id'], null, null, false, true, null]],
-        133 => [[['_route' => 'stream', '_controller' => 'App\\Controller\\StreamController::index'], ['canalId'], null, null, false, true, null]],
-        160 => [
+        70 => [[['_route' => 'precioCanal_show', '_controller' => 'App\\Controller\\CanalController::findPrecioByAuthor'], ['author'], null, null, false, true, null]],
+        90 => [[['_route' => 'CanalAuthor_show', '_controller' => 'App\\Controller\\CanalController::findCanalByAuthor'], ['author'], null, null, false, true, null]],
+        111 => [[['_route' => 'CanalAdd', '_controller' => 'App\\Controller\\CanalController::addCanal'], ['id'], null, null, false, true, null]],
+        142 => [[['_route' => 'checkEmail', '_controller' => 'App\\Controller\\UserController::checkEmail'], ['value'], null, null, false, true, null]],
+        163 => [[['_route' => 'checkUser', '_controller' => 'App\\Controller\\UserController::checkUser'], ['value'], null, null, false, true, null]],
+        189 => [[['_route' => 'stream', '_controller' => 'App\\Controller\\StreamController::index'], ['canalId'], null, null, false, true, null]],
+        216 => [
             [['_route' => 'editUser', '_controller' => 'App\\Controller\\UserController::editUset'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

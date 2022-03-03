@@ -110,7 +110,7 @@ class __TwigTemplate_772d33b487ac0be14fb0e94f5611c7ae extends Template
                 </a>
             </nav>
             </div>
-        </div>
+</div>
         <div class=\"row d-flex justify-content-center\">
             <div class=\"col-md-offset-5 col-md-5 col-sm-offset-3 col-sm-6\">
             <h1>Bienvenido a StromZu</h1>
@@ -223,7 +223,7 @@ class __TwigTemplate_772d33b487ac0be14fb0e94f5611c7ae extends Template
                 </a>
             </nav>
             </div>
-        </div>
+</div>
         <div class=\"row d-flex justify-content-center\">
             <div class=\"col-md-offset-5 col-md-5 col-sm-offset-3 col-sm-6\">
             <h1>Bienvenido a StromZu</h1>

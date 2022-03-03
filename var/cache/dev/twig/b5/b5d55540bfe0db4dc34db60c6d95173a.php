@@ -153,7 +153,7 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 \t\t\t<div class=\"agileits-top\">
                     ";
         // line 33
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 33, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control"]]);
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 33, $this->source); })()), 'form_start', ["attr" => ["class" => "form-control", "id" => "registration_form"]]);
         echo "
                             ";
         // line 34
@@ -193,11 +193,11 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
         // line 44
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 44, $this->source); })()), "agreeTerms", [], "any", false, false, false, 44), 'widget', ["attr" => ["class" => "form-check checkbox"]]);
         echo "
-\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones</span>
+\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones<br></span>
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"Registrate\">
+\t\t\t\t\t<input type=\"submit\" id=\"registerSubmit\" value=\"Registrate\">
                     ";
         // line 50
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 50, $this->source); })()), 'form_end');
@@ -221,6 +221,15 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 \t\t\t<li></li>
 \t\t</ul>
 \t</div>
+\t<script src=\"";
+        // line 70
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-3.3.1.min.js"), "html", null, true);
+        echo "\"></script>
+\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js\" integrity=\"sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
+\t<script src=\"";
+        // line 72
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/validator.js"), "html", null, true);
+        echo "\"></script>
 \t<!-- //main -->
 </body>
 </html>
@@ -242,7 +251,7 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 
     public function getDebugInfo()
     {
-        return array (  203 => 50,  194 => 44,  188 => 41,  184 => 40,  180 => 39,  176 => 38,  172 => 37,  168 => 36,  164 => 35,  160 => 34,  156 => 33,  148 => 27,  139 => 25,  134 => 24,  127 => 23,  114 => 17,  110 => 15,  103 => 14,  94 => 11,  87 => 10,  78 => 7,  71 => 6,  63 => 4,  56 => 3,  39 => 1,);
+        return array (  231 => 72,  226 => 70,  203 => 50,  194 => 44,  188 => 41,  184 => 40,  180 => 39,  176 => 38,  172 => 37,  168 => 36,  164 => 35,  160 => 34,  156 => 33,  148 => 27,  139 => 25,  134 => 24,  127 => 23,  114 => 17,  110 => 15,  103 => 14,  94 => 11,  87 => 10,  78 => 7,  71 => 6,  63 => 4,  56 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -279,7 +288,7 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 \t\t<h1>Registro</h1>
 \t\t<div class=\"main-agileinfo\">
 \t\t\t<div class=\"agileits-top\">
-                    {{ form_start(registrationForm,{'attr':{'class':'form-control'}}) }}
+                    {{ form_start(registrationForm,{'attr':{'class':'form-control','id':'registration_form'}}) }}
                             {{ form_widget(registrationForm.email,{'attr':{'class':'form-control text email'}}) }}
                             {{ form_widget(registrationForm.username,{'attr':{'class':'form-control text'}}) }}
                             {{ form_widget(registrationForm.foto,{'attr':{'class':'form-control img'}}) }}
@@ -291,11 +300,11 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
                     <div class=\"wthree-text\">             
                         <label class=\"anim\">
                             {{ form_widget(registrationForm.agreeTerms,{'attr':{'class':'form-check checkbox'}}) }}
-\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones</span>
+\t\t\t\t\t\t\t<span>Estoy de acuerdo con los términos y condiciones<br></span>
 \t\t\t\t\t\t</label>
 \t\t\t\t\t\t<div class=\"clear\"> </div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<input type=\"submit\" value=\"Registrate\">
+\t\t\t\t\t<input type=\"submit\" id=\"registerSubmit\" value=\"Registrate\">
                     {{ form_end(registrationForm) }}
 \t\t\t\t<p>¿Ya tienes cuenta? <a href=\"login\"> ¡Inicia sesión ya!</a></p>
 \t\t\t\t\t\t\t\t<br>
@@ -316,6 +325,9 @@ class __TwigTemplate_9ea14b97b10a93a1958b35d6797ace5a extends Template
 \t\t\t<li></li>
 \t\t</ul>
 \t</div>
+\t<script src=\"{{asset('js/jquery-3.3.1.min.js')}}\"></script>
+\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js\" integrity=\"sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
+\t<script src=\"{{asset('js/validator.js')}}\"></script>
 \t<!-- //main -->
 </body>
 </html>

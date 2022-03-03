@@ -18,4 +18,6 @@ return [
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'stream' => [['canalId'], ['_controller' => 'App\\Controller\\StreamController::index'], [], [['variable', '/', '[^/]++', 'canalId', true], ['text', '/stream']], [], [], []],
     'editUser' => [['id'], ['_controller' => 'App\\Controller\\UserController::editUset'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user/edit']], [], [], []],
+    'checkEmail' => [['value'], ['_controller' => 'App\\Controller\\UserController::checkEmail'], [], [['variable', '/', '[^/]++', 'value', true], ['text', '/check/email']], [], [], []],
+    'checkUser' => [['value'], ['_controller' => 'App\\Controller\\UserController::checkUser'], [], [['variable', '/', '[^/]++', 'value', true], ['text', '/check/user']], [], [], []],
 ];

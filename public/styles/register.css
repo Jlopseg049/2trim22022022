@@ -127,7 +127,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
   }
-  
+  a:link {
+
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
   h1 {
     font-size: 3em;
     text-align: center;
@@ -137,7 +148,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     letter-spacing: 4px;
     font-family: 'Roboto', sans-serif;
   }
+  h3 {
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+  }
   
+  .error{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1em;
+
+  }
   /*-- main --*/
   .main-w3layouts {
     padding: 3em 0 1em;

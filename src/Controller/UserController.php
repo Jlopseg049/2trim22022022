@@ -6,6 +6,8 @@ use App\Entity\User;
 use App\Form\UserEditType;
 use App\Security\UserAuthenticator;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\Persistence\ManagerRegistry;
+use phpDocumentor\Reflection\Types\Boolean;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -55,4 +57,22 @@ class UserController extends AbstractController
                 'editUserForm' => $form->createView(),
             ]);
         }
+
+        #[Route('check/email/{value}', name: 'checkEmail')]
+        public function checkEmail(string $value, ManagerRegistry $doctrine): Response
+        {
+        $email = $doctrine->getRepository(User::class)->checkEmail($value);
+            return new Response($email);
+        }
+
+        #[Route('check/user/{value}', name: 'checkUser')]
+        public function checkUser(string $value, ManagerRegistry $doctrine): Response
+        {
+        $user = $doctrine->getRepository(User::class)->checkUser($value);
+            return new Response($user);
+
+        }
+
 }
+
+
