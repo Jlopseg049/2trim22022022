@@ -7,9 +7,9 @@ $(()=>{
         });
         $('#reserva_fechaFin').datetimepicker({
             format:'d/m/Y H:i',
-            minDate:new Date( $('#reserva_fechaInicio').val().split(' ')[0].split('/')[2] + '/' +
+            minDate:new Date( /*$('#reserva_fechaInicio').val().split(' ')[0].split('/')[2] + '/' +
                               $('#reserva_fechaInicio').val().split(' ')[0].split('/')[1] + '/' + 
-                              $('#reserva_fechaInicio').val().split(' ')[0].split('/')[0]),
+                              $('#reserva_fechaInicio').val().split(' ')[0].split('/')[0]*/),
             });
             /*
             

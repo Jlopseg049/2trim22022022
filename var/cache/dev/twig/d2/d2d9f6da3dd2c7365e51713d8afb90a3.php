@@ -647,6 +647,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
   </main><!-- End #main -->
 </div>
   <!-- ======= Footer ======= -->
+  <footer>
          <div class=\"row justify-content-center mb-0 pt-5 pb-0 row-2 px-3\">
             <div class=\"col-12\">
                 <div class=\"row row-2\">
@@ -691,45 +692,45 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
   <!-- Vendor JS Files -->
    <script src=\"";
-        // line 608
+        // line 609
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/aos/aos.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 609
+        // line 610
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 610
+        // line 611
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/glightbox/js/glightbox.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 611
+        // line 612
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/isotope-layout/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 612
+        // line 613
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/php-email-form/validate.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 613
+        // line 614
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/swiper/swiper-bundle.min.js"), "html", null, true);
         echo "\"></script>
 
   <!-- Template Main JS File -->
 <script src=\"";
-        // line 616
+        // line 617
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-3.3.1.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 617
+        // line 618
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 618
+        // line 619
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/search.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 619
+        // line 620
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/canales.js"), "html", null, true);
         echo "\"></script>
 
@@ -755,7 +756,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
 
     public function getDebugInfo()
     {
-        return array (  733 => 619,  729 => 618,  725 => 617,  721 => 616,  715 => 613,  711 => 612,  707 => 611,  703 => 610,  699 => 609,  695 => 608,  646 => 561,  511 => 362,  497 => 351,  483 => 340,  469 => 329,  455 => 318,  429 => 295,  395 => 264,  332 => 204,  324 => 199,  316 => 194,  308 => 189,  290 => 174,  228 => 115,  205 => 94,  199 => 90,  191 => 85,  184 => 80,  179 => 78,  174 => 77,  169 => 75,  164 => 74,  162 => 73,  159 => 72,  156 => 71,  153 => 70,  149 => 68,  147 => 67,  127 => 50,  113 => 39,  100 => 29,  96 => 28,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
+        return array (  734 => 620,  730 => 619,  726 => 618,  722 => 617,  716 => 614,  712 => 613,  708 => 612,  704 => 611,  700 => 610,  696 => 609,  646 => 561,  511 => 362,  497 => 351,  483 => 340,  469 => 329,  455 => 318,  429 => 295,  395 => 264,  332 => 204,  324 => 199,  316 => 194,  308 => 189,  290 => 174,  228 => 115,  205 => 94,  199 => 90,  191 => 85,  184 => 80,  179 => 78,  174 => 77,  169 => 75,  164 => 74,  162 => 73,  159 => 72,  156 => 71,  153 => 70,  149 => 68,  147 => 67,  127 => 50,  113 => 39,  100 => 29,  96 => 28,  92 => 27,  86 => 24,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  57 => 13,  53 => 12,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -1324,6 +1325,7 @@ class __TwigTemplate_98ca25d087fd6a7adc17fcb5c7cc6a77 extends Template
   </main><!-- End #main -->
 </div>
   <!-- ======= Footer ======= -->
+  <footer>
          <div class=\"row justify-content-center mb-0 pt-5 pb-0 row-2 px-3\">
             <div class=\"col-12\">
                 <div class=\"row row-2\">

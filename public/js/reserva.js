@@ -19,6 +19,9 @@
 //       });
 // })
 $( function() {
+
+    $(".chat").prop("height", $(".video-wrap").height());
+
     $( "#dialog" ).dialog({
       autoOpen: false,
       resizable: false,
@@ -37,6 +40,7 @@ $( function() {
     });
  
     $( "#opener" ).on( "click", function() {
+      debugger;
       $( "#dialog" ).dialog( "open" );
     });
   } );
